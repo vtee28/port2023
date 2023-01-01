@@ -44,7 +44,7 @@ const Body = (props) => {
         return (
             <body className='body'>
                 <div className='left-side'>
-                <div className='middle-section'>
+                    <div className='middle-section'>
                         <div className='animation-grid animation-grid-two'>
                             <div className='img-box-1'>
                                 <div className='butterfly-1'>
@@ -62,7 +62,7 @@ const Body = (props) => {
                                 </div>
                             </div>
                             <div className='img-box-4'>
-                            <div className='butterfly-4'>
+                                <div className='butterfly-4'>
                                     <img className='bf-4' src={ButterflyFour} />
                                 </div>
                             </div>
@@ -70,12 +70,8 @@ const Body = (props) => {
                         <div className="center-text first-child"><h1>Hello, World!</h1></div>
                         <div className="center-text hp-p">
                             <div>
-                                {/* <p><span className="emoji">🙋🏽‍♀️</span>&nbsp;&nbsp;I’m Tiana M.</p>
-                                <p><span className="emoji">👩🏽‍💻</span>&nbsp;&nbsp;I design + build websites using:</p>
-                                <p><span className="emoji">💡</span>&nbsp;&nbsp;HTML + CSS + JavaScript + React.js </p>
-        <p><span className="emoji">👀</span>&nbsp;&nbsp;Looking to join a creative agency. </p> */}
-                            <p><span className="emoji">👩🏽‍💻</span></p>
-                            <p>I'm Tiana. I design and build websites with a focus on accessibility using HTML, CSS, Vanilla JavaScript, Illustrator, and React.js. Currently looking to join a creative agency where I can contribute to designs and websites.</p>
+                                <p><span className="emoji">👩🏽‍💻</span></p>
+                                <p>I'm Tiana. I design and build websites with a focus on accessibility using HTML, CSS, Vanilla JavaScript, Illustrator, and React.js. Currently looking to join a creative agency where I can contribute to designs and websites.</p>
                             </div>
                         </div>
                         <div className='center-text hp-btn-group'>
@@ -85,7 +81,7 @@ const Body = (props) => {
                     </div>
                 </div>
                 <div className='right-side'>
-                <div className='bg-img'>
+                    <div className='bg-img'>
                         <div className='animation-grid'>
                             <div className='img-box-1'>
                                 <div className='butterfly-1'>
@@ -103,7 +99,7 @@ const Body = (props) => {
                                 </div>
                             </div>
                             <div className='img-box-4'>
-                            <div className='butterfly-4'>
+                                <div className='butterfly-4'>
                                     <img className='bf-4' src={ButterflyFour} />
                                 </div>
                             </div>
