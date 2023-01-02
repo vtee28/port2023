@@ -7,7 +7,7 @@ const Frugal = () => {
     const siteTarget = '_blank';
 
     return (
-        <body className='body'>
+        <div className='body'>
             <div className='left-side'>
                 <div><h1>Frugal</h1></div>
             </div>
@@ -28,7 +28,7 @@ const Frugal = () => {
                     <div>&nbsp;</div>
                 </div>
             </div>
-        </body>
+        </div>
     )
 }
 

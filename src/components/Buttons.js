@@ -8,12 +8,13 @@ const Buttons = (props) => {
     const emailTarget = "_blank";
 
     return (
-        <div className='center-text'>
+        <div className='center-text hp-btn-group'>
             <button onClick={props.onFirstState}>Home</button>
-            <button onClick={props.onSecondState}>The Herbert Lab</button>
-            <button onClick={props.onThirdState}>Nails By K.C.</button>
-            <button onClick={props.onFourthState}>Frugal</button>
-            <button onClick={props.onFifthState}>Portfolio 2023</button>
+            <button onClick={props.onSecondState}>About</button>
+            <button onClick={props.onThirdState}>The Herbert Lab</button>
+            <button onClick={props.onFourthState}>Nails By K.C.</button>
+            <button onClick={props.onFifthState}>Frugal</button>
+            <button onClick={props.onSixthState}>Portfolio 2023</button>
             <a href={email} target={emailTarget}><button>Let's Connect</button></a>
         </div>
     )

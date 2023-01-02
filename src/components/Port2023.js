@@ -8,7 +8,7 @@ const Port2023 = () => {
 
 
     return (
-        <body className='body'>
+        <div className='body'>
             <div className='left-side'>
                 <div><h1>2023</h1></div>
             </div>
@@ -31,7 +31,7 @@ const Port2023 = () => {
                     <div>&nbsp;</div>
                 </div>
             </div>
-        </body>
+        </div>
     )
 };
 

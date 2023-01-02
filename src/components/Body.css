@@ -44,81 +44,12 @@ button:hover {
     background-color: rgb(0, 0, 0);
 }
 
+.hp-btn-group a {
+    margin-left: 10px;
+}
+
 /* General Styles */
 
-/* Animation Styles */
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes moveInTop {
-    from {
-        top: -100%
-    }
-
-    to {
-        top: 0%
-    }
-}
-
-@keyframes moveInBottom {
-    from {
-        bottom: -100%
-    }
-
-    to {
-        bottom: 0%
-    }
-}
-
-@keyframes moveInLeftSide {
-    from {
-        left: -100%
-    }
-
-    to {
-        left: 0%
-    }
-}
-
-@keyframes moveInRightSide {
-    from {
-        right: -100%
-    }
-
-    to {
-        right: 0%
-    }
-}
-
-@keyframes bf-giltch-1 {
-    from {
-        left: 0px
-    }
-
-    to {
-        left: 5px
-    }
-}
-
-@keyframes bf-giltch-2 {
-    from {
-        top: 0px
-    }
-
-    to {
-        top: 10px
-    }
-}
-
-/* Animation Styles */
 
 /* Body Styles */
 
@@ -126,6 +57,7 @@ button:hover {
     display: grid;
     grid-template-columns: 50% 50%;
     height: 100vh;
+    overflow-x: hidden !important;
 }
 
 .left-side {
@@ -186,111 +118,12 @@ button:hover {
     font-size: 45px;
 }
 
-.bg-img {
-    background-image: url('../img/landscape-bg.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.animation-grid {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    height: 100vh;
-    row-gap: 3em;
-}
-
-
-.butterfly-1 {
-    width: max-content;
-    height: max-content;
-    position: relative;
-    animation-name: fadeIn, bf-giltch-1;
-    animation-timing-function: ease, ease-in-out;
-    animation-duration: 5s, 3s;
-    animation-delay: 3s, 5s;
-    animation-iteration-count: 1, infinite;
-    animation-direction: normal, alternate;
-    animation-fill-mode: both;
-}
-
-.bf-1 {
-    height: 90px;
-    margin-left: 40px;
-    margin-top: 50px;
-}
-
-.butterfly-2 {
-    width: max-content;
-    height: max-content;
-    position: relative;
-    animation-name: fadeIn, bf-giltch-2;
-    animation-timing-function: ease, ease;
-    animation-duration: 5s, 3s;
-    animation-delay: 3s, 5s;
-    animation-iteration-count: 1, infinite;
-    animation-direction: normal, alternate;
-    animation-fill-mode: both;
-}
-
-.bf-2 {
-    height: 100px;
-    margin-left: 80px;
-    margin-top: 110px;
-}
-
-.butterfly-3 {
-    width: max-content;
-    height: max-content;
-    position: relative;
-    animation-name: fadeIn, bf-giltch-1;
-    animation-timing-function: ease, ease-in-out;
-    animation-duration: 5s, 3s;
-    animation-delay: 3s, 5s;
-    animation-iteration-count: 1, infinite;
-    animation-direction: normal, alternate;
-    animation-fill-mode: both;
-}
-
-.bf-3 {
-    height: 80px;
-    margin-left: 50px;
-    margin-top: 300px;
-}
-
-.butterfly-4 {
-    width: max-content;
-    height: max-content;
-    position: relative;
-    animation-name: fadeIn, bf-giltch-2;
-    animation-timing-function: ease, ease;
-    animation-duration: 5s, 3s;
-    animation-delay: 3s, 5s;
-    animation-iteration-count: 1, infinite;
-    animation-direction: normal, alternate;
-    animation-fill-mode: both;
-}
-
-.animation-grid-two .butterfly-4 {
-    z-index: -1;
-}
-
-.bf-4 {
-    height: 90px;
-    margin-left: 175px;
-    margin-top: 300px;
-}
-
 /* Body Styles */
 
 
 /* Media Queries */
 
 @media (min-width: 2560px) {
-    .animation-grid {
-        height: 100vh;
-        row-gap: 20em;
-        margin-left: 10%;
-    }
 
     .middle-section p {
         width: 55%;
@@ -303,13 +136,6 @@ button:hover {
         padding: 1.5em;
     }
 
-    .animation-grid {
-        width: 100%;
-    }
-
-    .animation-grid-two {
-        display: none;
-    }
 
     .middle-section h1 {
         font-size: 4.5em;
@@ -325,16 +151,13 @@ button:hover {
         text-align: center;
     }
 
-    .bf-3 {
-        margin-left: 125px;
-        margin-top: 100px;
-    }
-
-    .hp-p, .hp-btn-group {
+    .hp-p,
+    .hp-btn-group {
         justify-content: left;
     }
 
-    button, button:first-child {
+    button,
+    button:first-child {
         padding: 10px 25px;
     }
 }
@@ -349,7 +172,8 @@ button:hover {
         padding-left: 0px;
     }
 
-      .middle-section p, .middle-section p:first-child {
+    .middle-section p,
+    .middle-section p:first-child {
         width: 70%;
         text-align: center;
     }
@@ -366,35 +190,9 @@ button:hover {
         display: none;
     }
 
-    .animation-grid-two {
-        display: grid;
-    }
 
-    .bf-1 {
-        height: 140px;
-    }
-
-    .bf-2 {
-        height: 143px;
-        margin-left: 220px;
-        margin-top: 115px;
-    }
-
-    .bf-3 {
-        height: 115px;
-        margin-left: 0px;
-        margin-top: 250px;
-    }
-
-    .butterfly-4 {
-        z-index: -1;
-    }
-
-    .bf-4 {
-        margin-left: 235px;
-    }
-
-    .hp-p, .hp-btn-group {
+    .hp-p,
+    .hp-btn-group {
         justify-content: center;
     }
 }
@@ -410,7 +208,8 @@ button:hover {
 
     }
 
-    .middle-section p, .middle-section p:first-child {
+    .middle-section p,
+    .middle-section p:first-child {
         width: 100%;
         text-align: left;
     }
@@ -419,37 +218,8 @@ button:hover {
         padding-top: 5%;
     }
 
-    .emoji {
-        display: none;
-    }
-
-
-    .butterfly-3 {
-        z-index: -1;
-    }
-
-    .bf-1 {
-        height: 140px;
-        margin-left: -20px;
-    }
-
-    .bf-2 {
-        height: 130px;
-        margin-left: 20px;
-    }
-
-    .bf-3 {
-        height: auto;
-        margin-left: 0px;
-        margin-top: 490px;
-    }
-
-    .bf-4 {
-        margin-left: 125px;
-        margin-top: 445px;
-    }
-
-    .hp-p, .hp-btn-group {
+    .hp-p,
+    .hp-btn-group {
         justify-content: left;
     }
 
@@ -464,16 +234,6 @@ button:hover {
     }
 }
 
-@media (max-width: 412px) {
-    .center-text.first-child {
-         align-items: start; 
-    }
-}
 
-@media (max-width: 360px) {
-    .bf-4 {
-        margin-left: 90px;
-    } 
-}
 
 /* Media Queries */

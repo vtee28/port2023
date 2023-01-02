@@ -8,7 +8,7 @@ const NBK = () => {
 
 
     return (
-        <body className='body'>
+        <div className='body'>
             <div className='left-side'>
                 <div><h1>NBK</h1></div>
             </div>
@@ -31,7 +31,7 @@ const NBK = () => {
                     <div>&nbsp;</div>
                 </div>
             </div>
-        </body>
+        </div>
     )
 };
 

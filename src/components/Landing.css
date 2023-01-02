@@ -1,0 +1,347 @@
+html,
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #1e96fc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-rows: auto;
+    height: 100vh;
+    text-align: center;
+}
+
+.row-1,
+.row-2,
+.row-3,
+.row-4,
+.row-5 {
+    height: 20vh;
+}
+
+.row-1 div,
+.row-2 div,
+.row-3 div,
+.row-4 div,
+.row-5 div {
+    height: inherit;
+}
+
+.img-box-one img,
+.img-box-two img {
+    height: auto;
+}
+
+
+.img-box-three img {
+    height: inherit;
+}
+
+
+.landing-page-btn {
+    animation-name: fadeIn;
+    animation-timing-function: ease;
+    animation-duration: 3s;
+    animation-delay: 10s;
+    animation-fill-mode: both;
+    position: relative;
+    z-index: 5;
+    margin-top: -50px;
+}
+
+.landing-page-btn button:first-child {
+    background-color: #000;
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 1px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.landing-page-btn button:first-child:hover {
+    background-color: #F4EDE2;
+    color: #000;
+}
+
+.img-box-one {
+    width: 100%;
+}
+
+.img-box-two {
+    width: 100%;
+    margin-top: 55px;
+}
+
+.img-box-three {
+    width: 100%;
+}
+
+.clouds {
+    width: 100vw;
+    animation-name: moveInTop, clouds-giltch;
+    animation-timing-function: ease, ease-in-out;
+    animation-duration: 5s, 3s;
+    animation-delay: 0s, 5s;
+    animation-iteration-count: 1, infinite;
+    animation-direction: normal, alternate;
+    animation-fill-mode: both;
+    position: relative;
+}
+
+.rainbow {
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    animation-name: fadeIn;
+    animation-timing-function: ease;
+    animation-duration: 5s;
+    animation-delay: 5s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    position: relative;
+    margin-top: -10%;
+}
+
+.landscape {
+    width: 100vw;
+    animation-name: moveInBottom;
+    animation-timing-function: ease;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    position: relative;
+}
+
+
+.landing-page-body .butterfly-1 {
+    position: relative;
+    animation-name: fadeIn, bf-giltch-1;
+    animation-timing-function: ease, ease-in-out;
+    animation-duration: 5s, 3s;
+    animation-delay: 7s, 5s;
+    animation-iteration-count: 1, infinite;
+    animation-direction: normal, alternate;
+    animation-fill-mode: both;
+}
+
+.landing-page-body .butterfly-2 {
+    position: relative;
+    animation-name: fadeIn, bf-giltch-2;
+    animation-timing-function: ease, ease;
+    animation-duration: 5s, 3s;
+    animation-delay: 7s, 5s;
+    animation-iteration-count: 1, infinite;
+    animation-direction: normal, alternate;
+    animation-fill-mode: both;
+}
+
+.animation-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 100%;
+    column-gap: 1.5em;
+    text-align: center;
+}
+
+.bf-1 {
+    height: 50px;
+
+}
+
+.bf-2 {
+    height: 60px;
+
+}
+
+.landing-page-body .emoji {
+    font-size: 28px;
+}
+
+/* Animation Styles */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes moveInTop {
+    from {
+        top: -100%;
+    }
+
+    to {
+        top: 0%;
+    }
+}
+
+@keyframes moveInBottom {
+    from {
+        bottom: -100%;
+    }
+
+    to {
+        bottom: 0%;
+    }
+}
+
+@keyframes moveInLeftSide {
+    from {
+        left: -100%;
+    }
+
+    to {
+        left: 0%;
+    }
+}
+
+@keyframes moveInRightSide {
+    from {
+        right: -100%;
+    }
+
+    to {
+        right: 0%;
+    }
+}
+
+@keyframes clouds-giltch {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 15px;
+    }
+}
+
+@keyframes rainbow-giltch {
+    from {
+        top: 0px;
+    }
+
+    to {
+        top: 30px;
+    }
+}
+
+@keyframes bf-giltch-1 {
+    from {
+        left: 0px
+    }
+
+    to {
+        left: 5px
+    }
+}
+
+@keyframes bf-giltch-2 {
+    from {
+        top: 0px
+    }
+
+    to {
+        top: 10px
+    }
+}
+
+/* Animation Styles */
+
+/* Media Queries */
+@media only screen and (max-width: 1024px) {
+    .rainbow {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .rainbow {
+        width: 100%;
+    }
+
+    .landing-page-btn {
+        margin-top: -35px;
+    }
+
+}
+
+@media only screen and (max-width: 501px) {
+    .rainbow {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .row-1,
+    .row-2,
+    .row-3,
+    .row-4,
+    .row-5 {
+        height: auto;
+    }
+
+    .row-1 div,
+    .row-2 div,
+    .row-3 div,
+    .row-4 div,
+    .row-5 div {
+        height: auto;
+    }
+
+
+    .landing-page-btn {
+        margin-top: 10px;
+    }
+
+    .rainbow {
+        width: 100%;
+        margin-top: -25%;
+    }
+
+    .landscape {
+        margin-top: -65px;
+    }
+
+    .animation-grid {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .landing-page-btn {
+        margin-top: -20px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+  
+
+    .rainbow {
+        margin-top: -7%;
+    }
+
+    .landscape {
+        margin-top: -60px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .landing-page-btn {
+        margin-top: 15%;
+    }
+}
+
+/* Media Queries */
