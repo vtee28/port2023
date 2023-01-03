@@ -53,7 +53,7 @@ const Landing = (props) => {
     let rainbowImage = Rainbow;
 
 
-    if (w <= 500) {
+    if (w <= 500 || w <= 540 ) {
         cloudsImage = CloudsMobile;
         landscapeImage = LandscapeMobile;
         rainbowImage = RainbowMobile;
@@ -103,7 +103,7 @@ const Landing = (props) => {
                 </div>
                 <div className='row-3'>
                     <div className='landing-page-btn center-text'>
-                        <button onClick={props.onSecondState} aria-label="Click here  to view my recent work" >Share My World</button>
+                        <button onClick={props.onSecondState} aria-label="Click here  to view my recent work">WELCOME</button>
                     </div>
                 </div>
                 <div className='row-4'>
