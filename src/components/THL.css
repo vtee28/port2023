@@ -1,0 +1,22 @@
+.thl .left-side {
+    background-image: url('../img/img-2.webp');
+}
+
+.thl .right-side {
+    background-color: #fff;
+}
+
+.website-title h1 {
+    font-size: 15rem;
+    letter-spacing: 5px;
+    color: #000;
+    -webkit-text-stroke: #000;
+}
+
+.website-title p {
+    font-family: 'Inter Tight';
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #000;
+}

@@ -1,5 +1,6 @@
 import React from 'react';
-import './Body.css';
+import Buttons from './Contact';
+import './THL.css';
 
 
 
@@ -9,38 +10,44 @@ const THL = (props) => {
     const siteTarget = '_blank';
     const oldSiteLink = 'https://tianamariah.github.io/LOMI/';
 
-        return (
-            <>
-            <div className='body'>
+    return (
+        <>
+            <div className='body thl'>
                 <div className='left-side'>
-                    <div><h1>THL</h1></div>
-                </div>
-                <div className='right-side'>
-                    <div className='inner-grid'>
-                        <div>&nbsp;</div>
-                        <div className='middle-section'>
-                            <h1>The Herbert Lab</h1>
-                            <h2>Project Specifications:</h2>
-                            <p>An eighteen page informational site revamp to showcase Dr. Herbert’s Mucosal Immunology Science Lab in a professional + modern light.</p>
-                            <h2>Website Built With:</h2>
-                            <p>HTML</p>
-                            <p>CSS</p>
-                            <p>Vanilla JavaScript</p>
-
-                            <div className='center-text'>
-                                <a href={siteLink} target={siteTarget}>Visit Site</a>
-                            </div>
-                            <div className='center-text'>
-                            <a href={oldSiteLink} target={siteTarget}>Visit Older Verison</a>
+                    <div></div>
+                    <div className='middle-content'>
+                        <div></div>
+                        <div className='content-body center-text'>
+                            <div>
+                                <h1>Project Specifications:</h1>
+                                <p>An eighteen page informational site revamp to showcase Dr. Herbert’s Mucosal Immunology Science Lab in a professional + modern light. Website was built with <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>.</p>
+                                <div className='hp-btn-group center-text'>
+                                    <a href={siteLink} target={siteTarget}><button>Visit Site</button></a>
+                                </div>
                             </div>
                         </div>
-                        <div>&nbsp;</div>
+                        <div></div>
                     </div>
+                    <div></div>
+                </div>
+                <div className='right-side'>
+                    <div></div>
+                    <div className='website-title'>
+                        <div></div>
+                        <div className='center-text'>
+                            <div>
+                                <a href={siteLink} target={siteTarget}><h1>THL</h1></a>
+                                <a href={siteLink} target={siteTarget}><p>The Herbert Lab</p></a>
+                            </div>
+                        </div>
+                        <div></div>
+                    </div>
+                    <div></div>
                 </div>
             </div>
-            </>
+        </>
 
-        )
-    }
+    )
+}
 
 export default THL;

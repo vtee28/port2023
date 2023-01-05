@@ -6,6 +6,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;500;700;900&display=swap');
 
+html {
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -16,106 +21,177 @@ a {
 }
 
 button:first-child {
-    text-align: left;
     background-color: #fff;
-    border: 1px solid #000;
+    text-align: left;
+    border: 1px solid #f8b500;
     padding: 10px 40px;
     border-radius: 25px;
     margin-top: 20px;
     font-size: 18px;
     font-family: 'NeWake';
     margin-left: 0px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 button {
     text-align: left;
-    background-color: #fff;
-    border: 1px solid #000;
+    border: 1px solid #f8b500; 
     padding: 10px 40px;
     border-radius: 25px;
     margin-top: 20px;
     font-size: 18px;
     font-family: 'NeWake';
     margin-left: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 button:hover {
     color: #fff;
-    background-color: rgb(0, 0, 0);
+    background-color: #f8b500;
 }
 
 .hp-btn-group a {
     margin-left: 10px;
 }
 
+.wp-btn-group {
+    position: absolute;
+    z-index: 10;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.wp-btn-group button {
+    z-index: 10;
+    padding: 10px 50px;
+    margin-left: 15px;
+}
+
+@keyframes moveInLeftSide {
+    from {
+        left: -100%;
+    }
+
+    to {
+        left: 0%;
+    }
+}
+
+@keyframes moveInRightSide {
+    from {
+        right: -100%;
+    }
+
+    to {
+        right: 0%;
+    }
+}
+
 /* General Styles */
 
 
-/* Body Styles */
 
+/* Body Styles */
 .body {
     display: grid;
     grid-template-columns: 50% 50%;
     height: 100vh;
     overflow-x: hidden !important;
+    overflow-y: hidden !important;
 }
 
 .left-side {
-    color: #181818;
+    color: #000;
     text-align: left;
     animation: moveInLeftSide 4s;
     position: relative;
+    display: grid;
+    grid-template-rows: 33.33%;
+    text-align: center;
+}
+
+.insert-quote h1 {
+    color: transparent;
+    font-size: 4.2rem;
+    font-family: 'NeWake';
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    -webkit-text-stroke: #fff;
+    -webkit-text-stroke-width: .5px;
+    visibility: hidden;
+}
+
+.emoji {
+    font-size: 2rem;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.middle-content h1 {
+    font-family: 'NeWake';
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.content-body {
+    font-family: 'Inter Tight';
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.content-body p {
+    width: 50%;
+    margin: 0 auto;
+    padding: 15px;
 }
 
 .right-side {
+    background-image: url('../img/img-1.webp');
+    background-size: cover;
+    animation: moveInRightSide 4s;
+    position: relative;
+    display: grid;
+    grid-template-rows: 33.33%;
+    text-align: center;
+}
+
+.insert-quote {
     animation: moveInRightSide 4s;
     position: relative;
 }
 
-.middle-section {
-    padding-left: 25px;
-    font-family: 'Inter Tight';
-    font-weight: 200;
-    font-size: 1.2em;
-    width: 90%;
-    height: 100vh;
-    display: grid;
-    grid-template-rows: 33.33%;
-}
-
-.middle-section h1 {
-    font-size: 3.5em;
-    letter-spacing: 2px;
+.right-side h1 {
+    color: transparent;
+    font-size: 4.2rem;
     font-family: 'NeWake';
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    -webkit-text-stroke: #fff;
+    -webkit-text-stroke-width: .5px;
 }
 
-.middle-section p:first-child {
-    text-align: center;
-}
 
-.middle-section p {
-    width: 80%;
-    margin: 0 auto;
-    line-height: 32px;
-    text-align: center;
+.content-quote,
+.middle-content {
+    display: grid;
 }
 
 .center-text {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
-.center-text.first-child {
-    align-items: end;
-}
-
-.center-text:last-child {
-    align-items: start;
-}
-
-.emoji {
-    font-size: 45px;
+.black {
+    color: #fff;
+    -webkit-text-stroke: #fff;
+    -webkit-text-stroke-width: .5px;
 }
 
 /* Body Styles */
@@ -125,115 +201,75 @@ button:hover {
 
 @media (min-width: 2560px) {
 
-    .middle-section p {
+    .content-body p {
         width: 55%;
     }
 }
 
-@media (max-width: 940px) {
-
-    .left-side {
-        padding: 1.5em;
-    }
-
-
-    .middle-section h1 {
-        font-size: 4.5em;
-    }
-
-    .middle-section p {
-        width: 100%;
-        text-align: left;
-    }
-
-    .middle-section p:first-child {
-        padding-top: 5%;
-        text-align: center;
-    }
-
-    .hp-p,
-    .hp-btn-group {
-        justify-content: left;
-    }
-
-    button,
-    button:first-child {
-        padding: 10px 25px;
-    }
-}
-
-
-@media (max-width: 768px) {
+@media (max-width: 1260px) {
     .body {
         grid-template-columns: auto;
     }
 
-    .middle-section {
-        padding-left: 0px;
-    }
-
-    .middle-section p,
-    .middle-section p:first-child {
-        width: 70%;
-        text-align: center;
-    }
-
-    .middle-section p:first-child {
-        padding-top: 5%;
+    .insert-quote h1 {
+        visibility: visible;
     }
 
     .left-side {
-        margin-top: -10%;
+        animation: none;
+        background-image: none;
+    }
+
+    .middle-content {
+        animation: moveInLeftSide 4s;
+        background-repeat: no-repeat;
+        position: relative;
     }
 
     .right-side {
         display: none;
     }
 
+    .insert-quote {
+        background-image: url('../img/img-1.webp');
+        background-size: cover;
+    }
 
-    .hp-p,
-    .hp-btn-group {
-        justify-content: center;
+    .insert-quote h1 {
+        font-size: 3em;
+    }
+
+    .insert-quote h1 .black {
+        color: #fff;
+        -webkit-text-stroke: #fff;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .content-body p {
+        width: 85%;
     }
 }
+
 
 @media (max-width: 500px) {
 
-    .left-side {
-        padding: 0;
+    .insert-quote h1 {
+        font-size: 2em;
     }
 
-    .middle-section {
-        padding-left: 25px;
-
+    .content-body p {
+        width: 85%;
     }
 
-    .middle-section p,
-    .middle-section p:first-child {
-        width: 100%;
-        text-align: left;
-    }
 
-    .middle-section p:first-child {
-        padding-top: 5%;
-    }
-
-    .hp-p,
-    .hp-btn-group {
-        justify-content: left;
-    }
-
-    .centerText div {
-        padding: 5%;
-    }
 }
 
-@media (max-width: 425px) {
-    .middle-section h1 {
-        font-size: 3.5em;
+@media (max-width: 320px) {
+    button {
+        font-size: 16px !important;
     }
 }
-
-
 
 /* Media Queries */
