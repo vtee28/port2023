@@ -1,0 +1,112 @@
+.contact .left-side {
+    grid-template-rows: auto;
+}
+
+.contact .right-side {
+    background-image: url('../img/img-6.webp');
+    background-image: url('../img/img-6.png');
+}
+
+.contact .right-side {
+    background-color: #fff;
+}
+
+.contact .website-title h1 {
+    font-size: 9rem;
+    letter-spacing: 5px;
+    color: #000;
+    -webkit-text-stroke: #000;
+    -webkit-text-stroke-width: 1px;
+}
+
+.website-title h1:hover {
+    font-size: 10rem;
+    letter-spacing: 5px;
+    color: transparent;
+    -webkit-text-stroke: #000;
+    -webkit-text-stroke-width: 1px;
+}
+
+.website-title p {
+    font-family: 'Inter Tight';
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.website-title p:hover {
+    font-weight: 400;
+}
+
+.contact .middle-content h1 {
+    padding: 5px;
+}
+
+.contact .content-body h3 {
+    padding: 5px
+}
+
+.contact .hp-btn-group {
+    margin-top: -20px;
+    padding: 5px;
+}
+
+
+/* Animation */
+
+.spin-y {
+    animation: spin-y 10s infinite;
+}
+
+@keyframes spin-y {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    50% {
+        transform: rotateY(180deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+/* Animation */
+
+@media only screen and (max-width: 1260px) {
+
+    .contact .insert-quote {
+        background-image: url('../img/img-6.webp');
+        background-image: url('../img/img-6.png');
+    }
+
+    .contact .left-side .middle-content {
+        background-image: none;
+        background-color: #fff;
+    }
+
+    .contact .insert-quote h1 {
+        -webkit-text-stroke-color: #000;
+        -webkit-text-stroke-width: .5px;
+    }
+
+}
+
+
+@media only screen and (max-width: 500px) {
+    .contact .insert-quote {
+        background: none;
+    }
+
+    .contact .left-side {
+        background-image: url('../img/img-6.webp');
+        background-image: url('../img/img-6.png');
+    }
+
+    .contact .middle-content {
+        background-color: transparent !important;
+        
+    }
+}

@@ -1,18 +1,18 @@
-.thl .left-side {
+.port .left-side {
     grid-template-rows: auto;
 }
 
-.thl .right-side {
-    background-image: url('../img/img-2.webp');
-    background-image: url('../img/img-2.png');
+.port .right-side {
+    background-image: url('../img/img-5.webp');
+    background-image: url('../img/img-5.png');
 }
 
-.thl .right-side {
+.port .right-side {
     background-color: #fff;
 }
 
-.website-title h1 {
-    font-size: 15rem;
+.port .website-title h1 {
+    font-size: 10rem;
     letter-spacing: 5px;
     color: #000;
     -webkit-text-stroke: #000;
@@ -20,7 +20,7 @@
 }
 
 .website-title h1:hover {
-    font-size: 15rem;
+    font-size: 10rem;
     letter-spacing: 5px;
     color: transparent;
     -webkit-text-stroke: #000;
@@ -39,18 +39,19 @@
     font-weight: 400;
 }
 
-.thl .middle-content h1 {
+.port .middle-content h1 {
     padding: 5px;
 }
 
-.thl .content-body h3 {
+.port .content-body h3 {
     padding: 5px
 }
 
-.thl .hp-btn-group {
+.port .hp-btn-group {
     margin-top: -20px;
     padding: 5px;
 }
+
 
 /* Animation */
 
@@ -72,31 +73,35 @@
 
 @media only screen and (max-width: 1260px) {
 
-    .thl .insert-quote {
-        background-image: url('../img/img-2.webp');
-        background-image: url('../img/img-2.png');
+    .port .insert-quote {
+        background-image: url('../img/img-5.webp');
+        background-image: url('../img/img-5.png');
     }
 
-    .thl .left-side .middle-content {
+    .port .left-side .middle-content {
         background-image: none;
         background-color: #fff;
     }
 
-
+    .port .insert-quote h1 {
+        -webkit-text-stroke-color: #000;
+        -webkit-text-stroke-width: .5px;
+    }
 
 }
 
+
 @media only screen and (max-width: 500px) {
-    .thl .insert-quote {
+    .port .insert-quote {
         background: none;
     }
 
-    .thl .left-side {
-        background-image: url('../img/img-2.webp');
-        background-image: url('../img/img-2.png');
+    .port .left-side {
+        background-image: url('../img/img-5.webp');
+        background-image: url('../img/img-5.png');
     }
 
-    .thl .middle-content {
+    .port .middle-content {
         background-color: transparent !important;
         
     }
