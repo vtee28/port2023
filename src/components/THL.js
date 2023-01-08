@@ -20,7 +20,7 @@ const THL = () => {
                         <div></div>
                         <div className='content-body center-text'>
                             <div>
-                                <img src={ThlLogo} className="spin" alt="Atom The Herbert Lab Logo" width="80" height="80" />
+                                <img src={ThlLogo} className="spin" alt="Atom The Herbert Lab Logo" width="80" height="80"/>
                                 <h1>The Herbert Lab</h1>
                                 <h3>Project Specifications:</h3>
                                 <p>An eighteen page informational site revamp to showcase Dr. Herbert’s Mucosal Immunology Science Lab in a professional + modern light.</p>

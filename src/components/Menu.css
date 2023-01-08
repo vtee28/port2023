@@ -70,6 +70,15 @@
         'opsz' 48
 }
 
+.main-menu-icon,
+.navigate-icon {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 200,
+        'opsz' 48
+}
+
 
 /* Animation */
 
@@ -112,9 +121,6 @@
 
 .menu-grid {
     background-color: #fff;
-    color: #000;
-    -webkit-text-stroke: #000;
-    -webkit-text-stroke-width: .5px;
     grid-template-columns: repeat(3, auto);
     height: 100vh;
     display: none;
@@ -124,7 +130,6 @@
 }
 
 .menu-grid div:hover {
-    color: transparent;
     border-color: #000;
     cursor: pointer;
 }
@@ -153,66 +158,114 @@
     border-bottom: 1px solid #000;
 }
 
+.menuDiv1 {
+    color: rgb(230, 150, 119);
+}
+
+.menuDiv1 .menu-item-icon {
+    color: rgb(230, 150, 119);
+    -webkit-text-stroke-color: rgb(230, 150, 119);
+}
+
 .menuDiv1:hover {
-    background-image: url('../img/img-1.webp');
-    background-image: url('../img/img-1.png');
-    background-size: cover;
+    background-color: rgb(230, 150, 119);
+    color: #000;
+}
+
+.menuDiv2 {
+    color: rgb(152, 180, 232);
+}
+
+.menuDiv2 .menu-item-icon {
+    color: rgb(152, 180, 232);
+    -webkit-text-stroke-color: rgb(152, 180, 232);
 }
 
 
 .menuDiv2:hover {
-    background-image: url('../img/img-2.webp');
-    background-image: url('../img/img-2.png');
-    background-size: cover;
+    background-color: rgb(152, 180, 232);
+    color: #000;
 }
 
+.menuDiv3 {
+    color: rgb(192, 210, 167);
+}
+
+.menuDiv3 .menu-item-icon {
+    color: rgb(192, 210, 167);
+    -webkit-text-stroke-color: rgb(192, 210, 167);
+}
 
 .menuDiv3:hover {
-    background-image: url('../img/img-3.webp');
-    background-image: url('../img/img-3.png');
-    background-size: cover;
+    color: #000;
+    background-color: rgb(192, 210, 167);
 }
 
+.menuDiv4 {
+    color: rgb(224, 205, 179);
+}
+
+.menuDiv4 .menu-item-icon {
+    color: rgb(224, 205, 179);
+    -webkit-text-stroke-color: rgb(224, 205, 179);
+}
 
 .menuDiv4:hover {
-    background-image: url('../img/img-4.webp');
-    background-image: url('../img/img-4.png');
-    background-size: cover;
+    color: #000;
+    background-color: rgb(224, 205, 179);
 }
 
+.menuDiv5 {
+    color: rgb(249, 230, 144);
+}
+
+.menuDiv5 .menu-item-icon {
+    color: rgb(249, 230, 144);
+    -webkit-text-stroke-color: rgb(249, 230, 144);
+}
 
 .menuDiv5:hover {
-    background-image: url('../img/img-5.webp');
-    background-image: url('../img/img-5.png');
-    background-size: cover;
+   color: #000;
+   background-color: rgb(249, 230, 144) ;
 }
 
+.menuDiv6 {
+    color:  rgb(200, 173, 232);
+}
+
+.menuDiv6 .menu-item-icon {
+    color: rgb(200, 173, 232);
+    -webkit-text-stroke-color: rgb(200, 173, 232);
+}
 
 .menuDiv6:hover {
-    background-image: url('../img/img-6.webp');
-    background-image: url('../img/img-6.png');
-    background-size: cover;
+    color: #000;
+    background-color: rgb(200, 173, 232);
 }
 
 .navigate-icon {
     display: none;
 }
 
-
 /* Menu Styles */
 
 
 /* Media Queries */
 
-@media only screen and (max-width: 1260px) {
+@media only screen and (max-width: 1024px) {
 
-   
+    .menu-grid {
+        grid-template-columns: auto auto;
+        height: 100vh;
+    }
+
 }
 
 @media only screen and (max-width: 768px) {
 
     .menu-grid {
         grid-template-columns: auto;
+        height: auto;
     }
 
     .menu-grid h1 {
@@ -224,6 +277,7 @@
         width: 100%;
         display: grid;
         grid-template-columns: auto auto;
+        margin-top: 35px;
     }
 
     .mobileMenuGrid {
@@ -247,53 +301,100 @@
     }
 
     .material-symbols-rounded {
-        margin-top: -20px;
+        font-size: 35px;
     }
 
     .navigate {
         text-align: right;
     }
 
-    .menuDiv1-mobile {
-        background-image: url('../img/img-1.webp');
-        background-image: url('../img/img-1.png');
-        background-size: cover;
+    .menuDiv1-mobile,
+    .menuDiv1-mobile:hover {
+        background-image: none;
+    }
+
+    .menuDiv1-mobile .mobile-menu-title {
+        color: rgb(230, 150, 119);
+    }
+
+    .menuDiv1-mobile .mobile-menu-icon {
+        color: rgb(230, 150, 119);
+        -webkit-text-stroke-color: rgb(230, 150, 119);
     }
 
 
-    .menuDiv2-mobile {
-        background-image: url('../img/img-2.webp');
-        background-image: url('../img/img-2.png');
-        background-size: cover;
+    .menuDiv2-mobile,
+    .menuDiv2-mobile:hover {
+        background-image: none;
+    }
+
+    .menuDiv2-mobile .mobile-menu-title {
+        color: rgb(152, 180, 232);
+    }
+
+    .menuDiv2-mobile .mobile-menu-icon {
+        color: rgb(152, 180, 232);
+        -webkit-text-stroke-color: rgb(152, 180, 232);
+    }
+
+    .menuDiv3-mobile,
+    .menuDiv3-mobile:hover {
+        background-image: none;
+    }
+
+    .menuDiv3-mobile .mobile-menu-title {
+        color: rgb(192, 210, 167);
+    }
+
+    .menuDiv3-mobile .mobile-menu-icon {
+        color: rgb(192, 210, 167);
+        -webkit-text-stroke-color: rgb(192, 210, 167);
+    }
+
+    .menuDiv4-mobile,
+    .menuDiv4-mobile:hover {
+        background-image: none;
+    }
+
+    .menuDiv4-mobile .mobile-menu-title {
+        color: rgb(224, 205, 179);
+    }
+
+    .menuDiv4-mobile .mobile-menu-icon {
+        color: rgb(224, 205, 179);
+        -webkit-text-stroke-color: rgb(224, 205, 179);
+    }
+
+    .menuDiv5-mobile,
+    .menuDiv5-mobile:hover {
+        background-image: none;
+    }
+
+    .menuDiv5-mobile .mobile-menu-title {
+        color: rgb(249, 230, 144);
+    }
+
+    .menuDiv5-mobile .mobile-menu-icon {
+        color: rgb(249, 230, 144);
+        -webkit-text-stroke-color: rgb(249, 230, 144);
+    }
+
+    .menuDiv6-mobile,
+    .menuDiv6-mobile:hover {
+        background-image: none;
+    }
+
+    .menuDiv6-mobile .mobile-menu-title {
+        color: rgb(200, 173, 232);
+    }
+
+    .menuDiv6-mobile .mobile-menu-icon {
+        color: rgb(200, 173, 232);
+        -webkit-text-stroke-color: rgb(200, 173, 232);
     }
 
 
-    .menuDiv3-mobile {
-        background-image: url('../img/img-3.webp');
-        background-image: url('../img/img-3.png');
-        background-size: cover;
-    }
 
-
-    .menuDiv4-mobile {
-        background-image: url('../img/img-4.webp');
-        background-image: url('../img/img-4.png');
-        background-size: cover;
-    }
-
-
-    .menuDiv5-mobile {
-        background-image: url('../img/img-5.webp');
-        background-image: url('../img/img-5.png');
-        background-size: cover;
-    }
-
-
-    .menuDiv6-mobile {
-        background-image: url('../img/img-6.webp');
-        background-image: url('../img/img-6.png');
-        background-size: cover;
-    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -301,6 +402,10 @@
         width: 100%;
         height: auto;
         position: absolute;
+    }
+
+    .collapsible-menu:hover {
+        border: 1px solid #000 !important;
     }
 
     .inner-collapsible-grid {
@@ -326,7 +431,6 @@
         width: 100%;
         display: grid;
         grid-template-columns: auto auto;
-        margin-top: 10px;
     }
 
 
@@ -340,6 +444,8 @@
         margin-top: -12px;
         font-size: 40px;
     }
+
+
 }
 
 @media only screen and (max-width: 425px) {
