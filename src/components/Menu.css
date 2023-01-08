@@ -296,7 +296,7 @@
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
 
     .menuDiv .center-text {
         display: block;
@@ -325,7 +325,7 @@
     .mobileMenuGrid {
         width: 100%;
         display: grid;
-        grid-template-columns: 10% 80% 40%;
+        grid-template-columns: 3em auto 3em;
     }
 
 
@@ -353,6 +353,7 @@
     .menuDiv1-mobile,
     .menuDiv1-mobile:hover {
         background-image: none;
+        background-color: transparent;
     }
 
     .menuDiv1-mobile .mobile-menu-title {
@@ -367,6 +368,7 @@
     .menuDiv2-mobile,
     .menuDiv2-mobile:hover {
         background-image: none;
+        background-color: transparent;
     }
 
     .menuDiv2-mobile .mobile-menu-title {
@@ -381,6 +383,7 @@
     .menuDiv3-mobile,
     .menuDiv3-mobile:hover {
         background-image: none;
+        background-color: transparent;
     }
 
     .menuDiv3-mobile .mobile-menu-title {
@@ -395,6 +398,7 @@
     .menuDiv4-mobile,
     .menuDiv4-mobile:hover {
         background-image: none;
+        background-color: transparent;
     }
 
     .menuDiv4-mobile .mobile-menu-title {
@@ -409,6 +413,7 @@
     .menuDiv5-mobile,
     .menuDiv5-mobile:hover {
         background-image: none;
+        background-color: transparent;
     }
 
     .menuDiv5-mobile .mobile-menu-title {
@@ -423,6 +428,7 @@
     .menuDiv6-mobile,
     .menuDiv6-mobile:hover {
         background-image: none;
+        background-color: transparent;
     }
 
     .menuDiv6-mobile .mobile-menu-title {
@@ -440,37 +446,23 @@
 
 @media only screen and (max-width: 500px) {
 
-
-    .mobileMenuGrid {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 20% 80%;
+    .menu-grid {
+        background-color: #fff;
+        height: auto;
     }
+
 
     .mobile-menu-icon {
         font-size: 40px;
     }
 
-    .mobileMenuGrid {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 10% 45% 40%;
-    }
 
 }
 
 @media only screen and (max-width: 425px) {
 
-    .mobileMenuGrid {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 10% 45% 40%;
-    }
-
+  
 
 }
-
-
-
 
 /* Media Queries */
