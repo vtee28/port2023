@@ -451,18 +451,10 @@
 @media only screen and (max-width: 425px) {
 
 
-    .menuDiv1,
-    .menuDiv2,
-    .menuDiv3,
-    .menuDiv4,
-    .menuDiv5,
-    .menuDiv {
-        height: 100px;
-    }
-
     .mobileMenuGrid {
         grid-template-columns: 25% 75%;
     }
+
 }
 
 

@@ -90,38 +90,33 @@ const Body = (props) => {
                 <Menu onMenuOpen={openMenuHandler} onMenuClose={closeMenuHandler} onSecondState={secondStateHandler} onThirdState={thirdStateHandler} onFourthState={fourthStateHandler} onFifthState={fifthStateHandler} onSixthState={sixthStateHandler} onSeventhState={seventhStateHandler} />
 
                 <div className='body'>
-                    <div className='left-side'>
-                        <div className='insert-quote center-text'><h1>Make <span className='black'>Something</span></h1></div>
-                        <div className='middle-content'>
-                            <div></div>
-                            <div className='content-body center-text'>
-                                <div>
-                                    <picture>
-                                        <source srcSet={About} />
-                                        <img className="spin-y" src={AboutPng} width="200" height="102" alt="Hello Logo" />
-                                    </picture>
-                                    <p>I'm Tiana. I design and build websites with a focus on accessibility using <strong>HTML</strong>, <strong>CSS</strong>, <strong>Vanilla JavaScript</strong>, <strong>Illustrator</strong>, and <strong>React.js</strong>.</p>
-                                    <div className='hp-btn-group center-text'>
-                                        <div className='btn-grid'>
-                                            <div><button onClick={thirdStateHandler}>View Work</button></div>
-                                            <div><a href={email} target={emailTarget}><button>Email Me</button></a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div></div>
-                        </div>
-                        <div className='insert-quote center-text'><h1><span className='black'>Beautiful</span> Everyday</h1></div>
-                    </div>
-                    <div className='right-side'>
-                        <div></div>
+                   
+                    <div className='left-side center-text'>
+       
                         <div className='content-quote'>
-                            <div></div>
                             <div className='center-text quote'><h1>MAKE <span className="black">SOMETHING</span><br></br><span className="black">BEAUTIFUL</span> EVERYDAY</h1></div>
-                            <div></div>
                         </div>
-                        <div></div>
+   
                     </div>
+                    <div className='right-side center-text'>
+                     
+                     <div className='content-body'>
+                         <div>
+                             <picture>
+                                 <source srcSet={About} />
+                                 <img className="spin-y" src={AboutPng} width="200" height="102" alt="Hello Logo" />
+                             </picture>
+                             <p>I'm Tiana. I design and build websites with a focus on accessibility using <strong>HTML</strong>, <strong>CSS</strong>, <strong>Vanilla JavaScript</strong>, <strong>Illustrator</strong>, and <strong>React.js</strong>.</p>
+                             <div className='hp-btn-group center-text'>
+                                 <div className='btn-grid'>
+                                     <div><button onClick={thirdStateHandler}>View Work</button></div>
+                                     <div><a href={email} target={emailTarget}><button>Email Me</button></a></div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+            
+             </div>
                 </div >
             </>
         )

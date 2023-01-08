@@ -103,7 +103,7 @@ button:hover {
     overflow-y: hidden !important;
 }
 
-.left-side {
+.right-side {
     color: #000;
     text-align: left;
     animation: moveInLeftSide 4s;
@@ -113,24 +113,6 @@ button:hover {
     text-align: center;
 }
 
-.insert-quote h1 {
-    color: transparent;
-    font-size: 4.2rem;
-    font-family: 'NeWake';
-    text-transform: uppercase;
-    margin: 0;
-    padding: 0;
-    -webkit-text-stroke: #fff;
-    -webkit-text-stroke-width: .5px;
-    visibility: hidden;
-}
-
-.emoji {
-    font-size: 2rem;
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 30px;
-}
 
 .middle-content h1 {
     font-family: 'NeWake';
@@ -156,7 +138,7 @@ button:hover {
     grid-template-columns: auto auto;
 }
 
-.right-side {
+.left-side {
     background-image: url('../img/img-1.webp');
     background-size: cover;
     animation: moveInRightSide 4s;
@@ -166,12 +148,8 @@ button:hover {
     text-align: center;
 }
 
-.insert-quote {
-    animation: moveInRightSide 4s;
-    position: relative;
-}
 
-.right-side h1 {
+.left-side h1 {
     color: transparent;
     font-size: 4.2rem;
     font-family: 'NeWake';
@@ -180,11 +158,6 @@ button:hover {
     padding: 0;
     -webkit-text-stroke: #fff;
     -webkit-text-stroke-width: .5px;
-}
-
-.content-quote,
-.middle-content {
-    display: grid;
 }
 
 .center-text {
@@ -217,35 +190,6 @@ button:hover {
         grid-template-columns: auto;
     }
 
-    .insert-quote h1 {
-        visibility: visible;
-    }
-
-    .left-side {
-        animation: none;
-        background-image: none;
-    }
-
-    .middle-content {
-        animation: moveInLeftSide 4s;
-        background-repeat: no-repeat;
-        position: relative;
-    }
-
-    .right-side {
-        display: none;
-    }
-
-    .insert-quote {
-        background-image: url('../img/img-1.webp');
-        background-size: cover;
-    }
-
-    .insert-quote h1 {
-        font-size: 3em;
-    }
-
-
 }
 
 @media (max-width: 1024px) {
@@ -257,19 +201,10 @@ button:hover {
 
 @media (max-width: 500px) {
 
-    .left-side {
-        //background-image: url('../img/img-1.webp');
-        background-size: cover;
+    .left-side h1 {
+        font-size: 2.5rem;
+        margin-top: 10%;
     }
-
-    .insert-quote {
-        background: none;
-    }
-
-    .insert-quote h1 {
-        display: none;
-    }
-
 
     .content-body p {
         width: 85%;
@@ -283,24 +218,19 @@ button:hover {
         margin-left: 0px; 
     }
 
-
 }
 
 @media only screen and (max-width: 320px) {
+    .left-side h1 {
+        font-size: 2rem;
+    }
+
     button {
         font-size: 16px !important;
     }
 
-    .content-body {
-        margin-top: -50px;
-    }
-
     .content-body p {
-        width: 65%;
-    }
-
-    .middle-content h1 {
-        margin-left: 15px;
+        width: 75%;
     }
 }
 
