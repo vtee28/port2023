@@ -15,7 +15,7 @@ const Frugal = () => {
                         <div></div>
                         <div className='content-body center-text'>
                             <div>
-                                <span className="material-symbols-rounded menu-item-icon mobile-menu-icon spin-diamond" width="80" height="80">styler</span>
+                                <span className="material-symbols-rounded menu-item-icon mobile-menu-icon spin-y">styler</span>
                                 <h1>Frugal</h1>
                                 <h3>Project Specifications:</h3>
                                 <p>A newsletter curated for those who make it their mission to stay frugally stylish.<br></br><br></br><br></br></p>

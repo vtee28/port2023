@@ -20,7 +20,7 @@ const NBK = () => {
                             <div>
                                 <picture>
                                     <source type="webp/png" srcset={NbkLogo} />
-                                    <img src={NbkLogoPng} className='spin-y' alt='The Nail Bar Logo' width='80' />
+                                    <img src={NbkLogoPng} className='spin-y' alt='The Nail Bar Logo' width='80' height="71" />
                                 </picture>
                             </div>
                                     <h1>The Nail Bar</h1>

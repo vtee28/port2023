@@ -39,6 +39,10 @@
     font-weight: 400;
 }
 
+.frugal .menu-item-icon {
+    font-size: 80px;
+}
+
 .frugal .middle-content h1 {
     padding: 5px;
 }

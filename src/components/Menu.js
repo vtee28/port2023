@@ -69,10 +69,14 @@ const Menu = (props) => {
 
     return (
         <>
-            <div className='collapseable-menu' id='menu-bar' onClick={props.onMenuOpen}>
-                <div className="hideOnToggle"></div>
-                <div className='center-text menu-text-box' id="menu-box"><span className='menu-text' id='menu-icon'> <div id="rotateText">MENU <span className="emoji-menu">⬇️</span></div></span></div>
-                <div className="hideOnToggle"></div>
+            <div className='collapsible-menu' id='menu-bar' onClick={props.onMenuOpen}>
+                <div></div>
+                <div className='inner-collapsible-grid'>
+                    <div className="hideOnToggle"></div>
+                    <div className='center-text menu-text-box' id="menu-box"><span className='menu-text' id='menu-icon'> <div id="rotateText"><span class="material-symbols-rounded main-menu-icon">expand_more</span></div></span></div>
+                    <div className="hideOnToggle"></div>
+                </div>
+                <div></div>
             </div>
 
             <div className='menu-grid' id="menuGrid">
@@ -103,37 +107,37 @@ const Menu = (props) => {
                         <div className='navigate'><span class="material-symbols-rounded mobile-menu-icon navigate-icon">navigate_next</span></div>
                     </div>
                 </div>
-                    <div className='center-text menuDiv menuDiv4 menuDiv4-mobile' onClick={props.onFifthState} onMouseOver={startdiv4Handler} onMouseOut={stopdiv4Handler}>
-                        <div className='innerMenuGrid'>
-                            <div className='mobileMenuGrid'>
-                                <div><span className="material-symbols-rounded menu-item-icon mobile-menu-icon">styler</span></div>
-                                <div><h1 className='mobile-menu-title'>FRUGAL</h1></div>
-                            </div>
-                            <div className='navigate'><span class="material-symbols-rounded mobile-menu-icon navigate-icon">navigate_next</span></div>
+                <div className='center-text menuDiv menuDiv4 menuDiv4-mobile' onClick={props.onFifthState} onMouseOver={startdiv4Handler} onMouseOut={stopdiv4Handler}>
+                    <div className='innerMenuGrid'>
+                        <div className='mobileMenuGrid'>
+                            <div><span className="material-symbols-rounded menu-item-icon mobile-menu-icon">styler</span></div>
+                            <div><h1 className='mobile-menu-title'>FRUGAL</h1></div>
                         </div>
+                        <div className='navigate'><span class="material-symbols-rounded mobile-menu-icon navigate-icon">navigate_next</span></div>
                     </div>
-                        <div className='center-text menuDiv menuDiv5 menuDiv5-mobile' onClick={props.onSixthState} onMouseOver={startdiv5Handler} onMouseOut={stopdiv5Handler}>
-                            <div className='innerMenuGrid'>
-                                <div className='mobileMenuGrid'>
-                                    <div><span className="material-symbols-rounded menu-item-icon mobile-menu-icon">web</span></div>
-                                    <div><h1 className='mobile-menu-title'>Portfolio 2023</h1></div>
-                                </div>
-                                <div className='navigate'><span class="material-symbols-rounded mobile-menu-icon navigate-icon">navigate_next</span></div>
-                            </div>
+                </div>
+                <div className='center-text menuDiv menuDiv5 menuDiv5-mobile' onClick={props.onSixthState} onMouseOver={startdiv5Handler} onMouseOut={stopdiv5Handler}>
+                    <div className='innerMenuGrid'>
+                        <div className='mobileMenuGrid'>
+                            <div><span className="material-symbols-rounded menu-item-icon mobile-menu-icon">web</span></div>
+                            <div><h1 className='mobile-menu-title'>Portfolio 2023</h1></div>
                         </div>
-                        <div className='center-text menuDiv menuDiv6 menuDiv6-mobile' onClick={props.onSeventhState} onMouseOver={startdiv6Handler} onMouseOut={stopdiv6Handler}>
-                            <div className='innerMenuGrid'>
-                                <div className='mobileMenuGrid'>
-                                    <div><span className="material-symbols-rounded menu-item-icon mobile-menu-icon">contact_mail</span></div>
-                                    <div><h1 className='mobile-menu-title'>CONTACT</h1></div>
-                                </div>
-                                <div className='navigate'><span class="material-symbols-rounded mobile-menu-icon navigate-icon">navigate_next</span></div>
-                            </div>
-                        </div>
+                        <div className='navigate'><span class="material-symbols-rounded mobile-menu-icon navigate-icon">navigate_next</span></div>
                     </div>
-                    <span className='menu-text' id='menu-icon-close' onClick={props.onMenuClose}> X </span>
-                </>
-                )
-            };
+                </div>
+                <div className='center-text menuDiv menuDiv6 menuDiv6-mobile' onClick={props.onSeventhState} onMouseOver={startdiv6Handler} onMouseOut={stopdiv6Handler}>
+                    <div className='innerMenuGrid'>
+                        <div className='mobileMenuGrid'>
+                            <div><span className="material-symbols-rounded menu-item-icon mobile-menu-icon">contact_mail</span></div>
+                            <div><h1 className='mobile-menu-title'>CONTACT</h1></div>
+                        </div>
+                        <div className='navigate'><span class="material-symbols-rounded mobile-menu-icon navigate-icon">navigate_next</span></div>
+                    </div>
+                </div>
+            </div>
+            <span className='menu-text' id='menu-icon-close' onClick={props.onMenuClose}> X </span>
+        </>
+    )
+};
 
 export default Menu;

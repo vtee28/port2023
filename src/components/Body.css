@@ -151,6 +151,11 @@ button:hover {
     padding: 15px;
 }
 
+.btn-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
 .right-side {
     background-image: url('../img/img-1.webp');
     background-size: cover;
@@ -253,7 +258,7 @@ button:hover {
 @media (max-width: 500px) {
 
     .left-side {
-        background-image: url('../img/img-1.webp');
+        //background-image: url('../img/img-1.webp');
         background-size: cover;
     }
 
@@ -268,6 +273,14 @@ button:hover {
 
     .content-body p {
         width: 85%;
+    }
+
+    .btn-grid {
+        grid-template-columns: auto;
+    }
+
+    .hp-btn-group a {
+        margin-left: 0px; 
     }
 
 

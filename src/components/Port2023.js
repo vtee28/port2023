@@ -16,10 +16,11 @@ const Port2023 = () => {
                         <div></div>
                         <div className='content-body center-text'>
                             <div>
-                                <span className="material-symbols-rounded menu-item-icon mobile-menu-icon spin-diamond" width="80" height="80">web</span>
+                                <span className="material-symbols-rounded menu-item-icon mobile-menu-icon spin-y">web</span>
                                 <h1>Portfolio 2023</h1>
                                 <h3>Project Specifications:</h3>
-                                <p>In the past, my portfolio's were created with HTML, CSS and Bootstrap. This year, I wanted to showcase the new skills I learned in the past year.</p>
+                                <p>In the past, my portfolio's were created with HTML, CSS and Bootstrap.</p>
+                                <p>This year, I wanted to showcase the new skills I learned in the past year.</p>
                                 <p>Built with <strong>React.js</strong>, <strong>HTML</strong>, <strong>CSS</strong> + <strong>JavaScript</strong>.</p>
                                 <div className='hp-btn-group center-text'>
                                     <a href={oldSiteLink} target={siteTarget}><button>Visit Previous Portfolio</button></a>

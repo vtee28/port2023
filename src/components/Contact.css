@@ -19,8 +19,8 @@
     -webkit-text-stroke-width: 1px;
 }
 
-.website-title h1:hover {
-    font-size: 10rem;
+.contact .website-title h1:hover {
+    font-size: 9rem;
     letter-spacing: 5px;
     color: transparent;
     -webkit-text-stroke: #000;
@@ -38,6 +38,11 @@
 .website-title p:hover {
     font-weight: 400;
 }
+
+.contact .menu-item-icon {
+    font-size: 80px;
+}
+
 
 .contact .middle-content h1 {
     padding: 5px;

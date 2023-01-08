@@ -39,6 +39,10 @@
     font-weight: 400;
 }
 
+.port .menu-item-icon {
+    font-size: 80px;
+}
+
 .port .middle-content h1 {
     padding: 5px;
 }

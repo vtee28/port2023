@@ -11,7 +11,7 @@
     background-color: #fff;
 }
 
-.website-title h1 {
+.thl .website-title h1 {
     font-size: 15rem;
     letter-spacing: 5px;
     color: #000;
@@ -19,7 +19,7 @@
     -webkit-text-stroke-width: 1px;
 }
 
-.website-title h1:hover {
+.thl .website-title h1:hover {
     font-size: 15rem;
     letter-spacing: 5px;
     color: transparent;
@@ -27,7 +27,7 @@
     -webkit-text-stroke-width: 1px;
 }
 
-.website-title p {
+.thl .website-title p {
     font-family: 'Inter Tight';
     font-weight: 200;
     letter-spacing: 2px;

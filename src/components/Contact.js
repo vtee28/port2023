@@ -17,7 +17,7 @@ const Contact = () => {
                         <div></div>
                         <div className='content-body center-text'>
                             <div>
-                                <span className="material-symbols-rounded menu-item-icon mobile-menu-icon spin-y" width="80" height="80">contact_mail</span>
+                                <span className="material-symbols-rounded menu-item-icon mobile-menu-icon spin-y">contact_mail</span>
                                 <h1>Need a Website?</h1>
                                 <h3>Let's Connect!</h3>
                                 <p>I am available and best reached via email.</p>
