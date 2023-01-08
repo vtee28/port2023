@@ -46,6 +46,7 @@
 }
 
 #menu-icon-close {
+    font-family: 'Inter Tight';
     position: absolute;
     right: 0;
     top: 0;
@@ -74,7 +75,7 @@
 .navigate-icon {
     font-variation-settings:
         'FILL' 0,
-        'wght' 400,
+        'wght' 200,
         'GRAD' 200,
         'opsz' 48
 }
@@ -85,15 +86,16 @@
 .spin-y-menu {
     animation: spin-y-menu 5s infinite linear;
 }
- 
+
 @keyframes spin-y-menu {
     0% {
         transform: rotateY(0deg);
     }
-    
+
     50% {
         transform: rotateY(180deg);
     }
+
     100% {
         transform: rotateY(360deg);
     }
@@ -133,7 +135,6 @@
 }
 
 .menu-grid div:hover {
-    border-color: #000;
     cursor: pointer;
 }
 
@@ -145,20 +146,15 @@
 
 .menuDiv1,
 .menuDiv2,
-.menuDiv3,
 .menuDiv4,
-.menuDiv5,
-.menuDiv6 {
-    border-right: 1px solid #000;
+.menuDiv5 {
+    border-right: 1px solid #aaa;
 }
 
 .menuDiv1,
 .menuDiv2,
-.menuDiv3,
-.menuDiv4,
-.menuDiv5,
-.menuDiv6 {
-    border-bottom: 1px solid #000;
+.menuDiv3 {
+    border-bottom: 1px solid #aaa;
 }
 
 .menuDiv1 {
@@ -219,21 +215,21 @@
 }
 
 .menuDiv5 {
-    color: rgb(249, 230, 144);
+    color: rgb(238,191,116);
 }
 
 .menuDiv5 .menu-item-icon {
-    color: rgb(249, 230, 144);
-    -webkit-text-stroke-color: rgb(249, 230, 144);
+    color: rgb(238,191,116);
+    -webkit-text-stroke-color: rgb(238,191,116);
 }
 
 .menuDiv5:hover {
-   color: #000;
-   background-color: rgb(249, 230, 144) ;
+    color: #000;
+    background-color: rgb(249, 230, 144);
 }
 
 .menuDiv6 {
-    color:  rgb(200, 173, 232);
+    color: rgb(200, 173, 232);
 }
 
 .menuDiv6 .menu-item-icon {
@@ -244,6 +240,11 @@
 .menuDiv6:hover {
     color: #000;
     background-color: rgb(200, 173, 232);
+}
+
+.mobile-menu-add-icon {
+    font-size: 30px;
+    margin-top: 5px;
 }
 
 .navigate-icon {
@@ -292,7 +293,6 @@
         grid-template-columns: auto auto;
     }
 
-   
 }
 
 
@@ -300,7 +300,7 @@
 
     .menuDiv .center-text {
         display: block;
-         justify-content: baseline;
+        justify-content: baseline;
         align-items: center;
         text-align: center;
     }
@@ -348,6 +348,12 @@
 
     .navigate {
         text-align: right;
+    }
+
+    .menuDiv1,
+    .menuDiv2,
+    .menuDiv3 {
+        border-bottom: none;
     }
 
     .menuDiv1-mobile,
@@ -440,7 +446,9 @@
         -webkit-text-stroke-color: rgb(200, 173, 232);
     }
 
-
+    #menu-icon-close,  .mobile-menu-add-icon {
+        display: none;
+    }
 
 }
 
@@ -448,20 +456,12 @@
 
     .menu-grid {
         background-color: #fff;
-        height: auto;
-    }
 
+    }
 
     .mobile-menu-icon {
         font-size: 40px;
     }
-
-
-}
-
-@media only screen and (max-width: 425px) {
-
-  
 
 }
 

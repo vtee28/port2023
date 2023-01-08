@@ -21,20 +21,12 @@ a {
     text-decoration: none;
 }
 
-button:first-child {
-    background-color: #000;
-    color: #fff;
-    text-align: left;
-    padding: 10px 40px;
-    border-radius: 25px;
-    margin-top: 20px;
-    font-size: 18px;
-    font-family: 'NeWake';
-    margin-left: 0px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+.body strong {
+    color: rgb(230, 150, 119);
 }
 
-button {
+.body  button {
+    background-color: rgb(230, 150, 119);
     border: none;
     text-align: left;
     color: #000;
@@ -47,28 +39,14 @@ button {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
-button:hover {
-    color: #000;
-    background-color: #fff;
-    border: 1px solid #000;
+.body  button:hover {
+    color: rgb(230, 150, 119);
+    background-color: transparent;
+    border: 1px solid rgb(230, 150, 119);
 }
 
 .hp-btn-group a {
     margin-left: 10px;
-}
-
-.wp-btn-group {
-    position: absolute;
-    z-index: 10;
-    text-align: center;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.wp-btn-group button {
-    z-index: 10;
-    padding: 10px 50px;
-    margin-left: 15px;
 }
 
 @keyframes moveInLeftSide {

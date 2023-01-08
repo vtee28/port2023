@@ -48,6 +48,31 @@
     padding: 5px;
 }
 
+
+.port strong {
+    color:  rgb(238,191,116);
+}
+
+.port button {
+    background-color:  rgb(238,191,116);
+    border: none;
+    text-align: left;
+    color: #000;
+    padding: 10px 40px;
+    border-radius: 25px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: 'NeWake';
+    margin-left: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.port button:hover {
+    color:  rgb(238,191,116);
+    background-color: #fff;
+    border: 1px solid rgb(238,191,116);
+}
+
 /* Animation */
 
 .spin-y {

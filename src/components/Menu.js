@@ -84,9 +84,9 @@ const Menu = (props) => {
     const stopdiv5Handler = () => {
         setHovered(false);
         menuIcons[4].classList.remove('spin-y-menu');
-        menuIcons[4].style.color = 'rgb(249,230,144)';
-        mobileTitles[4].style.color = 'rgb(249,230,144)';
-        navigateIcons[4].style.color = 'rgb(249,230,144)';
+        menuIcons[4].style.color = 'rgb(238,191,116)';
+        mobileTitles[4].style.color = 'rgb(238,191,116)';
+        navigateIcons[4].style.color = 'rgb(238,191,116)';
     }
 
     const startdiv6Handler = () => {
@@ -124,6 +124,7 @@ const Menu = (props) => {
                         <div className='mobileMenuGrid'>
                             <div><span className="material-symbols-rounded menu-item-icon mobile-menu-icon">home</span></div>
                             <div><h1 className='mobile-menu-title'>HOME</h1></div>
+                            <span class="material-symbols-rounded mobile-menu-add-icon">add_circle</span>
                             <div className='navigate'><span class="material-symbols-rounded mobile-menu-icon navigate-icon">navigate_next</span></div>
                         </div>
                     </div>
@@ -133,6 +134,7 @@ const Menu = (props) => {
                         <div className='mobileMenuGrid'>
                             <div><span className="material-symbols-rounded menu-item-icon mobile-menu-icon">web</span></div>
                             <div><h1 className='mobile-menu-title'>The Herbert Lab</h1></div>
+                            <span class="material-symbols-rounded mobile-menu-add-icon">add_circle</span>
                             <div className='navigate'><span class="material-symbols-rounded mobile-menu-icon navigate-icon">navigate_next</span></div>
                         </div>
                     </div>
@@ -142,6 +144,7 @@ const Menu = (props) => {
                         <div className='mobileMenuGrid'>
                             <div><span className="material-symbols-rounded menu-item-icon mobile-menu-icon">web</span></div>
                             <div><h1 className='mobile-menu-title'>The Nail Bar</h1></div>
+                            <span class="material-symbols-rounded mobile-menu-add-icon">add_circle</span>
                             <div className='navigate'><span class="material-symbols-rounded mobile-menu-icon navigate-icon">navigate_next</span></div>
                         </div>
                     </div>
@@ -151,6 +154,7 @@ const Menu = (props) => {
                         <div className='mobileMenuGrid'>
                             <div><span className="material-symbols-rounded menu-item-icon mobile-menu-icon">web</span></div>
                             <div><h1 className='mobile-menu-title'>FRUGAL</h1></div>
+                            <span class="material-symbols-rounded mobile-menu-add-icon">add_circle</span>
                             <div className='navigate'><span class="material-symbols-rounded mobile-menu-icon navigate-icon">navigate_next</span></div>
                         </div>
                     </div>
@@ -160,6 +164,7 @@ const Menu = (props) => {
                         <div className='mobileMenuGrid'>
                             <div><span className="material-symbols-rounded menu-item-icon mobile-menu-icon">web</span></div>
                             <div><h1 className='mobile-menu-title'>Portfolio 2023</h1></div>
+                            <span class="material-symbols-rounded mobile-menu-add-icon">add_circle</span>
                             <div className='navigate'><span class="material-symbols-rounded mobile-menu-icon navigate-icon">navigate_next</span></div>
                         </div>
                     </div>
@@ -169,12 +174,13 @@ const Menu = (props) => {
                         <div className='mobileMenuGrid'>
                             <div><span className="material-symbols-rounded menu-item-icon mobile-menu-icon">contact_mail</span></div>
                             <div><h1 className='mobile-menu-title'>CONTACT</h1></div>
+                            <span class="material-symbols-rounded mobile-menu-add-icon">add_circle</span>
                             <div className='navigate'><span class="material-symbols-rounded mobile-menu-icon navigate-icon">navigate_next</span></div>
                         </div>
                     </div>
                 </div>
             </div>
-            <span className='menu-text' id='menu-icon-close' onClick={props.onMenuClose}> X </span>
+            <span id='menu-icon-close' onClick={props.onMenuClose}> X </span>
         </>
     )
 };

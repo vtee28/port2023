@@ -98,7 +98,7 @@ const Body = (props) => {
                             <div className='center-text'>
                                 <picture>
                                     <source srcSet={About} />
-                                    <img className="spin-y" src={AboutPng} width="200" alt="Hello Logo" />
+                                    <img src={AboutPng} width="200" alt="Hello Logo" />
                                 </picture>
                             </div>
                         </div>
@@ -107,7 +107,7 @@ const Body = (props) => {
                     <div className='right-side center-text'>
                         <div className='content-body'>
                             <div>
-                                <img src={AboutIcon} width="50" height="50"/>
+                                <img className="spin-y" src={AboutIcon} width="50" height="50"/>
                                 <p>I'm Tiana. 
                                     <br></br>
                                     I design and build websites with a focus on accessibility using:
