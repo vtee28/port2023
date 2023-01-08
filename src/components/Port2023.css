@@ -1,14 +1,14 @@
 .port .left-side {
-    grid-template-rows: auto;
-}
-
-.port .right-side {
     background-image: url('../img/img-5.webp');
     background-image: url('../img/img-5.png');
 }
 
 .port .right-side {
     background-color: #fff;
+}
+
+.port .menu-item-icon {
+    font-size: 80px;
 }
 
 .port .website-title h1 {
@@ -19,7 +19,7 @@
     -webkit-text-stroke-width: 1px;
 }
 
-.website-title h1:hover {
+.port .website-title h1:hover {
     font-size: 10rem;
     letter-spacing: 5px;
     color: transparent;
@@ -27,7 +27,7 @@
     -webkit-text-stroke-width: 1px;
 }
 
-.website-title p {
+.port .website-title p {
     font-family: 'Inter Tight';
     font-weight: 200;
     letter-spacing: 2px;
@@ -39,14 +39,6 @@
     font-weight: 400;
 }
 
-.port .menu-item-icon {
-    font-size: 80px;
-}
-
-.port .middle-content h1 {
-    padding: 5px;
-}
-
 .port .content-body h3 {
     padding: 5px
 }
@@ -56,20 +48,22 @@
     padding: 5px;
 }
 
-
 /* Animation */
 
-.spin {
-    animation: spin 20s infinite linear;
+.spin-y {
+    animation: spin-y 20s infinite linear;
 }
  
-@keyframes spin {
+@keyframes spin-y {
     0% {
-        transform: rotate(0deg);
+        transform: rotateY(0deg);
     }
-
+    
+    50% {
+        transform: rotateY(180deg);
+    }
     100% {
-        transform: rotate(360deg);
+        transform: rotateY(360deg);
     }
 }
 
@@ -77,36 +71,16 @@
 
 @media only screen and (max-width: 1260px) {
 
-    .port .insert-quote {
-        background-image: url('../img/img-5.webp');
-        background-image: url('../img/img-5.png');
+    .port .website-title h1, .port .website-title h1:hover {
+        font-size: 5rem;
     }
 
-    .port .left-side .middle-content {
-        background-image: none;
-        background-color: #fff;
+    .left-side {
+        padding: 3%;
     }
 
-    .port .insert-quote h1 {
-        -webkit-text-stroke-color: #000;
-        -webkit-text-stroke-width: .5px;
-    }
-
-}
-
-
-@media only screen and (max-width: 500px) {
-    .port .insert-quote {
-        background: none;
-    }
-
-    .port .left-side {
-        background-image: url('../img/img-5.webp');
-        background-image: url('../img/img-5.png');
-    }
-
-    .port .middle-content {
-        background-color: transparent !important;
-        
+    .right-side {
+        padding: 20px;
     }
 }
+

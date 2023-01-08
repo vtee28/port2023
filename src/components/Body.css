@@ -7,8 +7,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;500;700;900&display=swap');
 
 html {
-    overflow-x: hidden !important;
-    overflow-y: hidden !important;
+    width: auto;
+    overflow-x: hidden;
 }
 
 * {
@@ -99,14 +99,13 @@ button:hover {
     display: grid;
     grid-template-columns: 50% 50%;
     height: 100vh;
-    overflow-x: hidden !important;
-    overflow-y: hidden !important;
+    overflow-x: hidden;
 }
 
 .right-side {
     color: #000;
     text-align: left;
-    animation: moveInLeftSide 4s;
+    animation: moveInRightSide 4s;
     position: relative;
     display: grid;
     grid-template-rows: 33.33%;
@@ -141,7 +140,7 @@ button:hover {
 .left-side {
     background-image: url('../img/img-1.webp');
     background-size: cover;
-    animation: moveInRightSide 4s;
+    animation: moveInLeftSide 4s;
     position: relative;
     display: grid;
     grid-template-rows: 33.33%;
@@ -156,8 +155,8 @@ button:hover {
     text-transform: uppercase;
     margin: 0;
     padding: 0;
-    -webkit-text-stroke: #fff;
-    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke: #000;
+    -webkit-text-stroke-width: 1.5px;
 }
 
 .center-text {
@@ -190,6 +189,11 @@ button:hover {
         grid-template-columns: auto;
     }
 
+    .left-side h1 {
+        font-size: 2.5rem;
+        margin-top: 10%;
+    }
+
 }
 
 @media (max-width: 1024px) {
@@ -201,10 +205,6 @@ button:hover {
 
 @media (max-width: 500px) {
 
-    .left-side h1 {
-        font-size: 2.5rem;
-        margin-top: 10%;
-    }
 
     .content-body p {
         width: 85%;

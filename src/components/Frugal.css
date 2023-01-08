@@ -1,14 +1,14 @@
 .frugal .left-side {
-    grid-template-rows: auto;
-}
-
-.frugal .right-side {
     background-image: url('../img/img-4.webp');
     background-image: url('../img/img-4.png');
 }
 
 .frugal .right-side {
     background-color: #fff;
+}
+
+.frugal .menu-item-icon {
+    font-size: 80px;
 }
 
 .frugal .website-title h1 {
@@ -19,7 +19,7 @@
     -webkit-text-stroke-width: 1px;
 }
 
-.website-title h1:hover {
+.frugal .website-title h1:hover {
     font-size: 10rem;
     letter-spacing: 5px;
     color: transparent;
@@ -27,7 +27,7 @@
     -webkit-text-stroke-width: 1px;
 }
 
-.website-title p {
+.frugal .website-title p {
     font-family: 'Inter Tight';
     font-weight: 200;
     letter-spacing: 2px;
@@ -39,14 +39,6 @@
     font-weight: 400;
 }
 
-.frugal .menu-item-icon {
-    font-size: 80px;
-}
-
-.frugal .middle-content h1 {
-    padding: 5px;
-}
-
 .frugal .content-body h3 {
     padding: 5px
 }
@@ -56,20 +48,22 @@
     padding: 5px;
 }
 
-
 /* Animation */
 
-.spin {
-    animation: spin 20s infinite linear;
+.spin-y {
+    animation: spin-y 20s infinite linear;
 }
  
-@keyframes spin {
+@keyframes spin-y {
     0% {
-        transform: rotate(0deg);
+        transform: rotateY(0deg);
     }
-
+    
+    50% {
+        transform: rotateY(180deg);
+    }
     100% {
-        transform: rotate(360deg);
+        transform: rotateY(360deg);
     }
 }
 
@@ -77,36 +71,16 @@
 
 @media only screen and (max-width: 1260px) {
 
-    .frugal .insert-quote {
-        background-image: url('../img/img-4.webp');
-        background-image: url('../img/img-4.png');
+    .frugal .website-title h1, .frugal .website-title h1:hover {
+        font-size: 5rem;
     }
 
-    .frugal .left-side .middle-content {
-        background-image: none;
-        background-color: #fff;
+    .left-side {
+        padding: 3%;
     }
 
-    .frugal .insert-quote h1 {
-        -webkit-text-stroke-color: #000;
-        -webkit-text-stroke-width: .5px;
-    }
-
-
-}
-
-@media only screen and (max-width: 500px) {
-    .frugal .insert-quote {
-        background: none;
-    }
-
-    .frugal .left-side {
-        background-image: url('../img/img-4.webp');
-        background-image: url('../img/img-4.png');
-    }
-
-    .frugal .middle-content {
-        background-color: transparent !important;
-        
+    .right-side {
+        padding: 20px;
     }
 }
+

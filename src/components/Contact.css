@@ -1,8 +1,4 @@
 .contact .left-side {
-    grid-template-rows: auto;
-}
-
-.contact .right-side {
     background-image: url('../img/img-6.webp');
     background-image: url('../img/img-6.png');
 }
@@ -11,8 +7,12 @@
     background-color: #fff;
 }
 
+.contact .menu-item-icon {
+    font-size: 80px;
+}
+
 .contact .website-title h1 {
-    font-size: 9rem;
+    font-size: 8rem;
     letter-spacing: 5px;
     color: #000;
     -webkit-text-stroke: #000;
@@ -20,14 +20,14 @@
 }
 
 .contact .website-title h1:hover {
-    font-size: 9rem;
+    font-size: 8rem;
     letter-spacing: 5px;
     color: transparent;
     -webkit-text-stroke: #000;
     -webkit-text-stroke-width: 1px;
 }
 
-.website-title p {
+.contact .website-title p {
     font-family: 'Inter Tight';
     font-weight: 200;
     letter-spacing: 2px;
@@ -39,15 +39,6 @@
     font-weight: 400;
 }
 
-.contact .menu-item-icon {
-    font-size: 80px;
-}
-
-
-.contact .middle-content h1 {
-    padding: 5px;
-}
-
 .contact .content-body h3 {
     padding: 5px
 }
@@ -57,22 +48,20 @@
     padding: 5px;
 }
 
-
 /* Animation */
 
 .spin-y {
-    animation: spin-y 10s infinite;
+    animation: spin-y 20s infinite linear;
 }
-
+ 
 @keyframes spin-y {
     0% {
         transform: rotateY(0deg);
     }
-
+    
     50% {
         transform: rotateY(180deg);
     }
-
     100% {
         transform: rotateY(360deg);
     }
@@ -82,36 +71,16 @@
 
 @media only screen and (max-width: 1260px) {
 
-    .contact .insert-quote {
-        background-image: url('../img/img-6.webp');
-        background-image: url('../img/img-6.png');
+    .contact .website-title h1, .contact .website-title h1:hover {
+        font-size: 5rem;
     }
 
-    .contact .left-side .middle-content {
-        background-image: none;
-        background-color: #fff;
+    .left-side {
+        padding: 3%;
     }
 
-    .contact .insert-quote h1 {
-        -webkit-text-stroke-color: #000;
-        -webkit-text-stroke-width: .5px;
-    }
-
-}
-
-
-@media only screen and (max-width: 500px) {
-    .contact .insert-quote {
-        background: none;
-    }
-
-    .contact .left-side {
-        background-image: url('../img/img-6.webp');
-        background-image: url('../img/img-6.png');
-    }
-
-    .contact .middle-content {
-        background-color: transparent !important;
-        
+    .right-side {
+        padding: 20px;
     }
 }
+

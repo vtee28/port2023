@@ -82,17 +82,20 @@
 
 /* Animation */
 
-.spin {
-    animation: spin 20s infinite linear;
+.spin-y-menu {
+    animation: spin-y-menu 5s infinite linear;
 }
-
-@keyframes spin {
+ 
+@keyframes spin-y-menu {
     0% {
-        transform: rotate(0deg);
+        transform: rotateY(0deg);
     }
-
+    
+    50% {
+        transform: rotateY(180deg);
+    }
     100% {
-        transform: rotate(360deg);
+        transform: rotateY(360deg);
     }
 }
 
@@ -252,21 +255,60 @@
 
 /* Media Queries */
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1260px) {
 
-    .menu-grid {
-        grid-template-columns: auto auto;
-        height: 100vh;
+    .collapsible-menu {
+        width: 100%;
+        height: auto;
+        position: absolute;
     }
 
+    .collapsible-menu:hover {
+        border: 1px solid #000 !important;
+    }
+
+    .inner-collapsible-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: center;
+        height: max-content;
+    }
+
+    .menu-text-box {
+        width: auto;
+    }
+
+    #rotateText {
+        animation: none;
+        transform: none;
+        text-align: center;
+        margin-top: 0 !important;
+        animation: bounce 1s infinite ease-in-out alternate-reverse;
+    }
+
+    .innerMenuGrid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+   
 }
+
 
 @media only screen and (max-width: 768px) {
 
+    .menuDiv .center-text {
+        display: block;
+         justify-content: baseline;
+        align-items: center;
+        text-align: center;
+    }
+
     .menu-grid {
         grid-template-columns: auto;
-        height: auto;
     }
+
 
     .menu-grid h1 {
         font-size: 1.5rem;
@@ -283,9 +325,9 @@
     .mobileMenuGrid {
         width: 100%;
         display: grid;
-        grid-template-columns: 15% 85%;
-
+        grid-template-columns: 10% 80% 40%;
     }
+
 
     .mobile-menu-title {
         text-align: left;
@@ -321,7 +363,6 @@
         color: rgb(230, 150, 119);
         -webkit-text-stroke-color: rgb(230, 150, 119);
     }
-
 
     .menuDiv2-mobile,
     .menuDiv2-mobile:hover {
@@ -398,40 +439,6 @@
 }
 
 @media only screen and (max-width: 500px) {
-    .collapsible-menu {
-        width: 100%;
-        height: auto;
-        position: absolute;
-    }
-
-    .collapsible-menu:hover {
-        border: 1px solid #000 !important;
-    }
-
-    .inner-collapsible-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        text-align: center;
-        height: max-content;
-    }
-
-    .menu-text-box {
-        width: auto;
-    }
-
-    #rotateText {
-        animation: none;
-        transform: none;
-        text-align: center;
-        margin-top: 0 !important;
-        animation: bounce 1s infinite ease-in-out alternate-reverse;
-    }
-
-    .innerMenuGrid {
-        width: 100%;
-        display: grid;
-        grid-template-columns: auto auto;
-    }
 
 
     .mobileMenuGrid {
@@ -441,21 +448,29 @@
     }
 
     .mobile-menu-icon {
-        margin-top: -12px;
         font-size: 40px;
     }
 
+    .mobileMenuGrid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 10% 45% 40%;
+    }
 
 }
 
 @media only screen and (max-width: 425px) {
 
-
     .mobileMenuGrid {
-        grid-template-columns: 25% 75%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 10% 45% 40%;
     }
 
+
 }
+
+
 
 
 /* Media Queries */
