@@ -13,6 +13,7 @@ import AboutIcon from '../img/about-icon.png';
 
 
 const Body = (props) => {
+
     const email = 'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=vintagetee28@gmail.com';
     const emailTarget = "_blank";
 
@@ -86,6 +87,7 @@ const Body = (props) => {
 
 
     if (firstState === 1) {
+
         return (
             <>
                 <Menu onMenuOpen={openMenuHandler} onMenuClose={closeMenuHandler} onSecondState={secondStateHandler} onThirdState={thirdStateHandler} onFourthState={fourthStateHandler} onFifthState={fifthStateHandler} onSixthState={sixthStateHandler} onSeventhState={seventhStateHandler} />
