@@ -113,7 +113,7 @@ const Body = (props) => {
                             <div className='center-text'>
                                 <picture>
                                     <source srcSet={About} />
-                                    <img src={AboutPng} width="200" alt="Hello Logo" />
+                                    <img className='about-icon' src={AboutPng} width="200" alt="Hello Logo" />
                                 </picture>
                             </div>
                         </div>

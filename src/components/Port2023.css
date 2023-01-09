@@ -49,15 +49,12 @@
 }
 
 
-.port strong {
-    color:  rgb(238,191,116);
-}
 
 .port button {
     background-color:  rgb(238,191,116);
     border: none;
     text-align: left;
-    color: #000;
+    color: #fff;
     padding: 10px 40px;
     border-radius: 25px;
     margin-top: 20px;
@@ -65,6 +62,8 @@
     font-family: 'NeWake';
     margin-left: 10px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
 }
 
 .port button:hover {

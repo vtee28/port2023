@@ -29,7 +29,7 @@ const Contact = () => {
                             <h3>Let's Connect!</h3>
                             <p>I am available and best reached via email.</p>
                             <div className='hp-btn-group'>
-                            <div class="btn-grid">
+                            <div className="btn-grid">
                                 <div><a href={email} target={emailTarget}><button>Email Me</button></a></div>
                                 <div><a href={donationLink} target={emailTarget}><button>Buy Me A Coffee</button></a></div>
                             </div>
