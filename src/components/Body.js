@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Body.css';
 import Menu from './Menu';
 import THL from './THL';
@@ -13,6 +13,19 @@ import AboutIcon from '../img/about-icon.png';
 
 
 const Body = (props) => {
+
+    /* Rerendered on Window Resize */
+    useEffect(() => {
+        function handleResize() {}
+    
+        // Attach the event listener to the window object
+        window.addEventListener('resize', handleResize);
+    
+        // Remove the event listener when the component unmounts
+        return () => {
+          window.removeEventListener('resize', handleResize);
+        };
+      }, []);
 
     const email = 'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=vintagetee28@gmail.com';
     const emailTarget = "_blank";

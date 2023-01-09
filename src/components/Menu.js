@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './Menu.css';
 
 const Menu = (props) => {
-
     /* Hover on Menu Grid */
     const menuIcons = document.getElementsByClassName('menu-item-icon');
     const mobileTitles = document.getElementsByClassName('mobile-menu-title');
@@ -111,7 +110,7 @@ const Menu = (props) => {
 
     return (
         <>
-            <div className='collapsible-menu top' id='menu-bar' onClick={props.onMenuOpen}>
+            <div className='collapsible-menu' id='menu-bar' onClick={props.onMenuOpen}>
                 <div></div>
                 <div className='inner-collapsible-grid'>
                     <div className="hideOnToggle"></div>

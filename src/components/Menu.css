@@ -1,6 +1,7 @@
 /* Menu Styles */
 .collapsible-menu {
-    background-color: #fff;
+    animation: moveInLeftSide 2s ease-in-out both;
+    background-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0 1px 4px rgb(0 0 0 / 16%);
     color: #000;
     display: grid;
@@ -86,9 +87,6 @@
     animation: spin-y-menu 5s infinite linear ;
 }
 
-.top {
-    animation: top 1.5s 3s linear both;
-}
 
 @keyframes spin-y-menu {
     0% {
@@ -263,7 +261,6 @@
 .navigate-icon {
     display: none;
 }
-
 /* Menu Styles */
 
 
@@ -272,10 +269,10 @@
 @media only screen and (max-width: 1260px) {
 
     .collapsible-menu {
+        animation: top 2s linear both;
         width: 100%;
         height: auto;
         position: fixed;
-        background-color: rgba(255, 255, 255, 0.3);
         box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     }
 

@@ -49,6 +49,8 @@ a {
     margin-left: 10px;
 }
 
+/* Animations */
+
 @keyframes moveInLeftSide {
     from {
         left: -100%;
@@ -69,6 +71,8 @@ a {
     }
 }
 
+/* Animations */
+
 /* General Styles */
 
 
@@ -85,7 +89,7 @@ a {
 .right-side {
     color: #000;
     text-align: left;
-    animation: moveInRightSide 4s;
+    animation: moveInRightSide 2s;
     position: relative;
     display: grid;
     grid-template-rows: 33.33%;
@@ -120,7 +124,7 @@ a {
 .left-side {
     background-image: url('../img/img-1.webp');
     background-size: cover;
-    animation: moveInLeftSide 4s;
+    animation: moveInLeftSide 2s;
     position: relative;
     display: grid;
     grid-template-rows: 33.33%;
