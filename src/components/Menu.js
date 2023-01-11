@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './Menu.css';
+import About from '../img/about.webp';
+import AboutPng from '../img/about.png';
 
 const Menu = (props) => {
     /* Hover on Menu Grid */
@@ -113,9 +115,9 @@ const Menu = (props) => {
             <div className='collapsible-menu' id='menu-bar' onClick={props.onMenuOpen}>
                 <div></div>
                 <div className='inner-collapsible-grid'>
-                    <div className="hideOnToggle"></div>
-                    <div className='center-text menu-text-box' id="menu-box"><span className='menu-text' id='menu-icon'> <div id="rotateText"><span className="material-symbols-rounded main-menu-icon">expand_more</span></div></span></div>
-                    <div className="hideOnToggle"></div>
+                    <div></div>
+                    <div className='center-text menu-text-box' id="menu-box"><span className='menu-text' id='menu-icon'><div id="rotateText"><span className="material-symbols-rounded main-menu-icon">expand_more</span></div></span></div>
+                    <div></div>
                 </div>
                 <div></div>
             </div>

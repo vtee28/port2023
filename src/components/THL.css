@@ -46,7 +46,7 @@
 
 
 .thl button {
-    background-color:  rgb(152, 180, 232);
+    background-color: rgb(152, 180, 232);
     border: none;
     text-align: left;
     color: #fff;
@@ -62,9 +62,13 @@
 }
 
 .thl button:hover {
-    color:  rgb(152, 180, 232);
+    color: rgb(152, 180, 232);
     background-color: #fff;
     border: 1px solid rgb(152, 180, 232);
+}
+
+#showMobileSection {
+    display: none;
 }
 
 /* Animation */
@@ -91,10 +95,17 @@
 
 @media only screen and (max-width: 1260px) {
 
+    #showDesktopSection {
+        display: none;
+    }
+
+    #showMobileSection {
+        display: grid;
+    }
+
     .thl .website-title h1,
     .thl .website-title h1:hover {
         font-size: 8rem;
     }
 
 }
-

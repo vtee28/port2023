@@ -15,7 +15,7 @@ const NBK = () => {
                 <div className='website-title'>
                     <div className='center-text'>
                         <div>
-                            <a href={siteLink} target={siteTarget}><h1>NBK</h1></a>
+                            <a href={siteLink} target={siteTarget}><h1>TNB</h1></a>
                             <a href={siteLink} target={siteTarget}><p>The Nail Bar</p></a>
                         </div>
                     </div>

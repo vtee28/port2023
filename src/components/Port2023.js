@@ -23,7 +23,7 @@ const Port2023 = () => {
                 <div className='right-side center-text'>
                     <div className='content-body'>
                         <div>
-                            <span className="material-symbols-rounded menu-item-icon mobile-menu-icon spin-y">styler</span>
+                            <span className="material-symbols-rounded menu-item-icon mobile-menu-icon spin-y">web</span>
                             <h1>Portfolio 2023</h1>
                             <h3>Project Specifications:</h3>
                             <p>In the past, my portfolio's were created with HTML, CSS and Bootstrap.</p>

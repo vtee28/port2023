@@ -6,26 +6,10 @@ import NBK from './NBK';
 import Frugal from './Frugal';
 import Port2023 from './Port2023';
 import Contact from './Contact';
-import About from '../img/about.webp';
-import AboutPng from '../img/about.png';
-import AboutIcon from '../img/about-icon.png';
 
 
 
 const Body = (props) => {
-
-    /* Rerendered on Window Resize */
-    useEffect(() => {
-        function handleResize() {}
-    
-        // Attach the event listener to the window object
-        window.addEventListener('resize', handleResize);
-    
-        // Remove the event listener when the component unmounts
-        return () => {
-          window.removeEventListener('resize', handleResize);
-        };
-      }, []);
 
     const email = 'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=vintagetee28@gmail.com';
     const emailTarget = "_blank";
@@ -97,6 +81,26 @@ const Body = (props) => {
     }
 
 
+    /* Showing Elements on Scroll */
+
+
+
+    useEffect(() => {
+        function handleScroll() { 
+
+            console.log();
+            
+        }
+    
+        // Attach the event listener to the window object
+        window.addEventListener('scroll', handleScroll);
+    
+        // Remove the event listener when the component unmounts
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
 
 
     if (firstState === 1) {
@@ -104,17 +108,15 @@ const Body = (props) => {
         return (
             <>
                 <Menu onMenuOpen={openMenuHandler} onMenuClose={closeMenuHandler} onSecondState={secondStateHandler} onThirdState={thirdStateHandler} onFourthState={fourthStateHandler} onFifthState={fifthStateHandler} onSixthState={sixthStateHandler} onSeventhState={seventhStateHandler} />
-
                 <div className='body'>
 
                     <div className='left-side center-text'>
 
-                        <div className='content-quote'>
-                            <div className='center-text'>
-                                <picture>
-                                    <source srcSet={About} />
-                                    <img className='about-icon' src={AboutPng} width="200" alt="Hello Logo" />
-                                </picture>
+                        <div className='center-text'>
+                            <div className='content-quote website-title'>
+                                <h1>TM</h1>
+                                <p>Freelance Front End Developer</p>
+                                <p>Make Something Beautiful Everyday</p>
                             </div>
                         </div>
 
@@ -122,12 +124,9 @@ const Body = (props) => {
                     <div className='right-side center-text'>
                         <div className='content-body'>
                             <div>
-                                <img className="spin-y" src={AboutIcon} width="50" height="50"/>
-                                <p>I'm Tiana. 
-                                    <br></br>
-                                    I design and build websites with a focus on accessibility using:
-                                    <br></br><br></br>
-                                    <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>React.js</strong>, and <strong>Illustrator</strong>.
+                                <h1>Hello, I'm Tiana ✨</h1>
+                                <p>
+                                    I design and build websites with a focus on accessibility using: <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>React.js</strong>, and <strong>Illustrator</strong>.
                                 </p>
                                 <div className='hp-btn-group center-text'>
                                     <div className='btn-grid'>
@@ -139,6 +138,11 @@ const Body = (props) => {
                         </div>
                     </div>
                 </div >
+                <THL />
+                <NBK />
+                <Frugal />
+                <Port2023 />
+                <Contact />
             </>
         )
     }
@@ -148,7 +152,6 @@ const Body = (props) => {
         return (
             <>
                 <Menu onMenuOpen={openMenuHandler} onMenuClose={closeMenuHandler} onSecondState={secondStateHandler} onThirdState={thirdStateHandler} onFourthState={fourthStateHandler} onFifthState={fifthStateHandler} onSixthState={sixthStateHandler} onSeventhState={seventhStateHandler} />
-
                 <THL />
             </>
         )

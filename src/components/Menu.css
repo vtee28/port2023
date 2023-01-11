@@ -1,25 +1,44 @@
 /* Menu Styles */
 .collapsible-menu {
-    animation: moveInLeftSide 2s ease-in-out both;
-    background-color: rgba(255, 255, 255, 0.3);
-    box-shadow: 0 1px 4px rgb(0 0 0 / 16%);
-    color: #000;
-    display: grid;
-    grid-template-rows: 33.33%;
-    height: 100vh;
-    position: absolute;
-    width: 2em;
-    z-index: 10;
+    animation: top 2s linear both;
+    background-color: rgb(0,0,0); 
+    box-shadow: 0 13px 27px -5px rgb(50 50 93 / 25%), 0 8px 16px -8px rgb(0 0 0 / 30%);
+    color: #fff;
+    height: 30px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
 }
 
-.collapsible-menu:hover {
-    background-color: rgba(0, 0, 0, 0.3);
-    color: #000;
-    cursor: pointer;
+.inner-collapsible-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    height: max-content;
 }
 
 .menu-text-box {
-    width: max-content;
+    width: auto;
+}
+
+#rotateText {
+    text-align: center;
+    margin-top: 5px;
+    padding: 0px;
+    animation: bounce 1s infinite ease-in-out alternate-reverse;
+    position: relative;
+}
+
+.innerMenuGrid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.collapsible-menu:hover {
+    background-color: rgb(252, 252, 252);
+    color: #000;
+    cursor: pointer;
 }
 
 .menu-arrow:hover {
@@ -31,23 +50,13 @@
     font-size: 20px;
 }
 
-#rotateText {
-    padding: 0px;
-    transform: rotate(-90deg);
-    font-family: 'NeWake';
-    letter-spacing: 4px;
-    position: relative;
-    animation: glitch 1s ease infinite alternate;
-    margin-top: 110px;
-}
-
 .emoji-menu-icon {
     font-size: 12px;
 }
 
 #menu-icon-close {
     font-family: 'Inter Tight';
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
     animation: none;
@@ -74,9 +83,13 @@
 .navigate-icon {
     font-variation-settings:
         'FILL' 0,
-        'wght' 200,
+        'wght' 400,
         'GRAD' 200,
         'opsz' 48
+}
+
+.main-menu-icon {
+    font-size: 35px;
 }
 
 
@@ -114,11 +127,11 @@
 
 @keyframes bounce {
     from {
-        top: 0px;
+        top: 5px;
     }
 
     to {
-        top: -4px;
+        top: -5px;
     }
 }
 
@@ -139,7 +152,7 @@
     grid-template-columns: repeat(3, auto);
     height: 100vh;
     display: none;
-    position: absolute;
+    position: fixed;
     z-index: 10;
     width: 100%;
 }
@@ -264,46 +277,6 @@
 
 
 /* Media Queries */
-
-@media only screen and (max-width: 1260px) {
-
-    .collapsible-menu {
-        animation: top 2s linear both;
-        width: 100%;
-        height: auto;
-        position: fixed;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-    }
-
-
-
-    .inner-collapsible-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        text-align: center;
-        height: max-content;
-    }
-
-    .menu-text-box {
-        width: auto;
-    }
-
-    #rotateText {
-        animation: none;
-        transform: none;
-        text-align: center;
-        margin-top: 0 !important;
-        animation: bounce 1s infinite ease-in-out alternate-reverse;
-    }
-
-    .innerMenuGrid {
-        width: 100%;
-        display: grid;
-        grid-template-columns: auto auto;
-    }
-
-}
-
 
 @media only screen and (max-width: 1024px) {
 
@@ -458,7 +431,7 @@
         -webkit-text-stroke-color: rgb(200, 173, 232);
     }
 
-    #menu-icon-close,  .mobile-menu-add-icon {
+    .mobile-menu-add-icon {
         display: none;
     }
 
