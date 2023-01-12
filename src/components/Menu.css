@@ -1,9 +1,9 @@
 /* Menu Styles */
 .collapsible-menu {
     animation: top 2s linear both;
-    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, .3); 
     box-shadow: 0 13px 27px -5px rgb(50 50 93 / 25%), 0 8px 16px -8px rgb(0 0 0 / 30%);
-    color: #fff;
+    color: #000;
     height: 30px;
     position: fixed;
     width: 100%;
@@ -55,6 +55,7 @@
 }
 
 #menu-icon-close {
+    color: #fff;
     font-family: 'Inter Tight';
     position: fixed;
     right: 0;
@@ -66,6 +67,7 @@
 }
 
 #menu-icon-close:hover {
+    color: #000;
     cursor: pointer;
 }
 
@@ -148,7 +150,7 @@
 /* Animation */
 
 .menu-grid {
-    background-color: #fff;
+    background-color: rgba(0,0,0,.7);
     grid-template-columns: repeat(3, auto);
     height: 100vh;
     display: none;
@@ -171,13 +173,13 @@
 .menuDiv2,
 .menuDiv4,
 .menuDiv5 {
-    border-right: 1px solid #aaa;
+    //border-right: 1px solid #aaa;
 }
 
 .menuDiv1,
 .menuDiv2,
 .menuDiv3 {
-    border-bottom: 1px solid #aaa;
+    //border-bottom: 1px solid #aaa;
 }
 
 .menuDiv1 {
@@ -439,10 +441,6 @@
 
 @media only screen and (max-width: 500px) {
 
-    .menu-grid {
-        background-color: #fff;
-
-    }
 
     .mobile-menu-icon {
         font-size: 40px;

@@ -6,6 +6,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;500;700;900&display=swap');
 
+
 html,
 .body {
     width: auto;
@@ -155,7 +156,6 @@ a {
     font-size: 50px;
 }
 
-
 .website-title h1 {
     font-family: 'NeWake';
     font-size: 15rem;
@@ -176,6 +176,11 @@ a {
     color: #000;
     -webkit-text-stroke: #000;
     -webkit-text-stroke-width: .1px;
+}
+
+.flowerImg {
+    width: 250px;
+    height: auto;
 }
 
 /* Body Styles */
@@ -217,6 +222,12 @@ a {
 
     .hp-btn-group a {
         margin-left: 0px;
+    }
+
+    .flowerImg {
+        width: 175px;
+        height: auto;
+        margin-top: 20px;
     }
 
 }

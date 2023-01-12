@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import './Menu.css';
-import About from '../img/about.webp';
-import AboutPng from '../img/about.png';
 
 const Menu = (props) => {
     /* Hover on Menu Grid */

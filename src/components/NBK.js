@@ -10,6 +10,7 @@ const NBK = () => {
 
 
     return (
+       <div className='main'>
         <div className='body nbk'>
             <div className='left-side center-text'>
                 <div className='website-title'>
@@ -39,6 +40,7 @@ const NBK = () => {
                 </div>
             </div>
         </div>
+    </div>
     )
 };
 

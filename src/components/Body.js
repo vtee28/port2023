@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './Body.css';
 import Menu from './Menu';
 import THL from './THL';
@@ -6,7 +6,9 @@ import NBK from './NBK';
 import Frugal from './Frugal';
 import Port2023 from './Port2023';
 import Contact from './Contact';
-
+import Fade from 'react-reveal/Fade';
+import Flower from '../img/flower.png';
+import Jello from 'react-reveal/Jello';
 
 
 const Body = (props) => {
@@ -53,6 +55,7 @@ const Body = (props) => {
     const menuBar = document.getElementById('menu-bar');
     const menuGrid = document.getElementById('menuGrid');
     const menuCloseIcon = document.getElementById('menu-icon-close');
+    const main = document.getElementsByClassName('main');
 
     const [toogleMenuOpen, setToogleMenuOpen] = useState(false);
 
@@ -72,54 +75,34 @@ const Body = (props) => {
         menuBar.style.display = "none";
         menuGrid.style.display = "grid";
         menuCloseIcon.style.visibility = "visible";
+        main[0].style.display = "none";
     }
 
     if (toogleMenuClose) {
         menuBar.style.display = "grid";
         menuGrid.style.display = "none";
         menuCloseIcon.style.visibility = "hidden";
+        main[0].style.display = "block";
     }
-
-
-    /* Showing Elements on Scroll */
-
-
-
-    useEffect(() => {
-        function handleScroll() { 
-
-            console.log();
-            
-        }
-    
-        // Attach the event listener to the window object
-        window.addEventListener('scroll', handleScroll);
-    
-        // Remove the event listener when the component unmounts
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
-
-
 
     if (firstState === 1) {
 
         return (
             <>
-                <Menu onMenuOpen={openMenuHandler} onMenuClose={closeMenuHandler} onSecondState={secondStateHandler} onThirdState={thirdStateHandler} onFourthState={fourthStateHandler} onFifthState={fifthStateHandler} onSixthState={sixthStateHandler} onSeventhState={seventhStateHandler} />
+
+            <Menu onMenuOpen={openMenuHandler} onMenuClose={closeMenuHandler} onSecondState={secondStateHandler} onThirdState={thirdStateHandler} onFourthState={fourthStateHandler} onFifthState={fifthStateHandler} onSixthState={sixthStateHandler} onSeventhState={seventhStateHandler} />
+
+            <div className='main'>
                 <div className='body'>
 
                     <div className='left-side center-text'>
-
                         <div className='center-text'>
                             <div className='content-quote website-title'>
-                                <h1>TM</h1>
+                               <Jello forever><img className='glitch-about flowerImg'src={Flower} alt='flower illustration'/></Jello>
                                 <p>Freelance Front End Developer</p>
                                 <p>Make Something Beautiful Everyday</p>
                             </div>
                         </div>
-
                     </div>
                     <div className='right-side center-text'>
                         <div className='content-body'>
@@ -138,12 +121,27 @@ const Body = (props) => {
                         </div>
                     </div>
                 </div >
-                <THL />
-                <NBK />
-                <Frugal />
-                <Port2023 />
-                <Contact />
+
+
+                <Fade>
+                    <THL />
+                </Fade>
+                <Fade>
+                    <NBK />
+                </Fade>
+                <Fade>
+                    <Frugal />
+                </Fade>
+                <Fade>
+                    <Port2023 />
+                </Fade>
+                <Fade>
+                    <Contact />
+                </Fade>
+         
+                </div>
             </>
+           
         )
     }
 
