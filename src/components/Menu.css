@@ -152,7 +152,7 @@
 .menu-grid {
     background-color: rgba(0,0,0,.7);
     grid-template-columns: repeat(3, auto);
-    height: 100vh;
+    height: 95vh;
     display: none;
     position: fixed;
     z-index: 10;
